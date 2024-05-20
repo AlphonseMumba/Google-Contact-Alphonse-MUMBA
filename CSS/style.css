@@ -1,0 +1,276 @@
+/*---------------body-------------*/
+body{
+    margin-top: 1%;
+}
+
+/*---------------Header------------*/
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    padding: 5px;
+    gap: 5%;
+}
+.navHeader {
+    display: flex;
+    gap: 10%;
+    width: 80%;
+    height: 100%;
+    padding: 2px;
+}
+.navLogo{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    width: 30%;
+}
+.burger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    border-radius: 25px;
+    background-color: rgb(234, 228, 228);
+    width: 40px;
+}
+.logoGoogleContact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px
+}
+.contactHead{
+    display: flex;
+    align-items: center;
+}
+.searchBar{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.searchBarStyle{
+    width: 85%;
+    height: 95%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 0cm;
+    background-color: #f1f3f4;
+}
+.searchBar label{
+    width: 15%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: #f1f3f4;
+}
+.searchBar svg{
+    width: 70%;
+    height: 70%;
+}
+.headerMenu{
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerMenuContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+}
+.profil{
+    width: 100%;
+    height: 100%;
+    background-color: green;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+/*-----------MainIndex-------------*/
+
+.mainIndex{
+    display: flex;
+    background-color: azure;
+    height: 90vh;
+}
+.sideMenu{
+    width: 15%;
+    height: 100%;
+    padding-top: 1.5%;
+}
+.sideMenuContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 15%;
+    margin-top: 5%;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+}
+.sideMenuContainer button{
+    border: none;
+    background-color: transparent;
+}
+.sideMenuContainerStyleBlue{
+    background-color: #c1feff;
+}
+.iconPlus, .contactLogo, .fréquentLogo, .tag{
+    width: 30px;
+    height: 30px;
+}
+.tagContainer{
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+}
+
+
+/*-----------Tableau------------*/
+.listContact{
+    background-color: white;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding-left: 1%;
+}
+.titleContact{
+    display: flex;
+    width: 15%;
+    justify-content: space-between;
+    align-items: center;
+}
+.tableauContacts{
+    width: 100%;
+}
+.titleTr{
+    width: 80%;
+}
+.titleTr th{
+    width: 15%;
+}
+.tr2{
+    background-color: aqua;
+    gap: 100px;
+}
+.tr2 img, #checkBox{
+    width: 40px;
+    height: 40px;
+    margin-left: 15%;
+}
+.tr2 td {
+    text-align: center;
+}
+.newDataForm{
+    background-color: azure;
+    width: 30%;
+}
+
+/*-----------Formulaire-----------*/
+
+.createContact{
+    background-color: white;
+    border-radius: 10px;
+    width: 80%;
+    height: 100%;
+}
+.firstFormDiv{
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    height: 5%;
+    margin-top: 2%;
+    padding: 2%;
+}
+.btnSaveContact{
+    width: 20%;
+    height: 100%;
+    border-radius: 15px;
+}
+#return{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 100%;
+}
+.showListContactBtnImg{
+    width: 80%;
+    height: 80%;
+}
+.secondFormDiv{
+    width: 25%;
+    height: 25%;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.secondFormDiv img{
+    height: 100%;
+}
+.inputElementContact{
+    width: 50%;
+}
+.inputElementContact > div{
+    width: 100%;
+}
+.title input, .email input, .number input, .fonction input, #libelleInput{
+    width: 70%;
+    height: 15%;
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-top: 10px;
+} 
+.title label, .email label, .number label, .fonction label{
+    width: 15%;
+    height: 15%;
+    margin-left: 10%;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+} 
+#firstNameLabelContainer, #nameLabelContainer, #emailLabelContainer, #numberLabelContainer, #enterpriseLabelContainer, #fonctionLabelContainer{
+    height: 15%;
+    width: 5%;
+}
+.libelle{
+    width: 40%;
+    justify-content: center;
+}
+.libelle input{
+    width: 75%;
+    margin-left: 15%;
+}
+.libelle button{
+    width: 5%;
+    height: 15%;
+    margin-left: 10%;
+    text-align: center;
+}
+.libelleListDiv{
+    display: flex;
+    width: 70%;
+    height: 5%;
+    margin-left: 15%;
+}
+/*.libelle label{
+    background-color: red;
+}*/
+.checkBoxLibelle{
+    width: 15px;
+    height: 15px;
+    margin-left: 1%;
+}

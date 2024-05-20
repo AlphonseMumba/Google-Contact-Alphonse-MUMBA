@@ -1,0 +1,2089 @@
+<!DOCTYPE html>
+<!-- saved from url=(0037)https://developer.mozilla.org/fr/play -->
+<html lang="fr" prefix="og: https://ogp.me/ns#" class="os-default"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>.ͼ1.cm-focused {outline: 1px dotted #212121;}
+.ͼ1 {position: relative !important; box-sizing: border-box; display: flex !important; flex-direction: column;}
+.ͼ1 .cm-scroller {display: flex !important; align-items: flex-start !important; font-family: monospace; line-height: 1.4; height: 100%; overflow-x: auto; position: relative; z-index: 0;}
+.ͼ1 .cm-content[contenteditable=true] {-webkit-user-modify: read-write-plaintext-only;}
+.ͼ1 .cm-content {margin: 0; flex-grow: 2; flex-shrink: 0; display: block; white-space: pre; word-wrap: normal; box-sizing: border-box; padding: 4px 0; outline: none;}
+.ͼ1 .cm-lineWrapping {white-space: pre-wrap; white-space: break-spaces; word-break: break-word; overflow-wrap: anywhere; flex-shrink: 1;}
+.ͼ2 .cm-content {caret-color: black;}
+.ͼ3 .cm-content {caret-color: white;}
+.ͼ1 .cm-line {display: block; padding: 0 2px 0 6px;}
+.ͼ1 .cm-layer > * {position: absolute;}
+.ͼ1 .cm-layer {position: absolute; left: 0; top: 0; contain: size style;}
+.ͼ2 .cm-selectionBackground {background: #d9d9d9;}
+.ͼ3 .cm-selectionBackground {background: #222;}
+.ͼ2.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #d7d4f0;}
+.ͼ3.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground {background: #233;}
+.ͼ1 .cm-cursorLayer {pointer-events: none;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer {animation: steps(1) cm-blink 1.2s infinite;}
+@keyframes cm-blink {50% {opacity: 0;}}
+@keyframes cm-blink2 {50% {opacity: 0;}}
+.ͼ1 .cm-cursor, .ͼ1 .cm-dropCursor {border-left: 1.2px solid black; margin-left: -0.6px; pointer-events: none;}
+.ͼ1 .cm-cursor {display: none;}
+.ͼ3 .cm-cursor {border-left-color: #444;}
+.ͼ1 .cm-dropCursor {position: absolute;}
+.ͼ1.cm-focused > .cm-scroller > .cm-cursorLayer .cm-cursor {display: block;}
+.ͼ2 .cm-activeLine {background-color: #cceeff44;}
+.ͼ3 .cm-activeLine {background-color: #99eeff33;}
+.ͼ2 .cm-specialChar {color: red;}
+.ͼ3 .cm-specialChar {color: #f78;}
+.ͼ1 .cm-gutters {flex-shrink: 0; display: flex; height: 100%; box-sizing: border-box; inset-inline-start: 0; z-index: 200;}
+.ͼ2 .cm-gutters {background-color: #f5f5f5; color: #6c6c6c; border-right: 1px solid #ddd;}
+.ͼ3 .cm-gutters {background-color: #333338; color: #ccc;}
+.ͼ1 .cm-gutter {display: flex !important; flex-direction: column; flex-shrink: 0; box-sizing: border-box; min-height: 100%; overflow: hidden;}
+.ͼ1 .cm-gutterElement {box-sizing: border-box;}
+.ͼ1 .cm-lineNumbers .cm-gutterElement {padding: 0 3px 0 5px; min-width: 20px; text-align: right; white-space: nowrap;}
+.ͼ2 .cm-activeLineGutter {background-color: #e2f2ff;}
+.ͼ3 .cm-activeLineGutter {background-color: #222227;}
+.ͼ1 .cm-panels {box-sizing: border-box; position: sticky; left: 0; right: 0;}
+.ͼ2 .cm-panels {background-color: #f5f5f5; color: black;}
+.ͼ2 .cm-panels-top {border-bottom: 1px solid #ddd;}
+.ͼ2 .cm-panels-bottom {border-top: 1px solid #ddd;}
+.ͼ3 .cm-panels {background-color: #333338; color: white;}
+.ͼ1 .cm-tab {display: inline-block; overflow: hidden; vertical-align: bottom;}
+.ͼ1 .cm-widgetBuffer {vertical-align: text-top; height: 1em; width: 0; display: inline;}
+.ͼ1 .cm-placeholder {color: #888; display: inline-block; vertical-align: top;}
+.ͼ1 .cm-highlightSpace:before {content: attr(data-display); position: absolute; pointer-events: none; color: #888;}
+.ͼ1 .cm-highlightTab {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="200" height="20"><path stroke="%23888" stroke-width="1" fill="none" d="M1 10H196L190 5M190 15L196 10M197 4L197 16"/></svg>'); background-size: auto 100%; background-position: right 90%; background-repeat: no-repeat;}
+.ͼ1 .cm-trailingSpace {background-color: #ff332255;}
+.ͼ1 .cm-button {vertical-align: middle; color: inherit; font-size: 70%; padding: .2em 1em; border-radius: 1px;}
+.ͼ2 .cm-button:active {background-image: linear-gradient(#b4b4b4, #d0d3d6);}
+.ͼ2 .cm-button {background-image: linear-gradient(#eff1f5, #d9d9df); border: 1px solid #888;}
+.ͼ3 .cm-button:active {background-image: linear-gradient(#111, #333);}
+.ͼ3 .cm-button {background-image: linear-gradient(#393939, #111); border: 1px solid #888;}
+.ͼ1 .cm-textfield {vertical-align: middle; color: inherit; font-size: 70%; border: 1px solid silver; padding: .2em .5em;}
+.ͼ2 .cm-textfield {background-color: white;}
+.ͼ3 .cm-textfield {border: 1px solid #555; background-color: inherit;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul > li {overflow-x: hidden; text-overflow: ellipsis; cursor: pointer; padding: 1px 3px; line-height: 1.2;}
+.ͼ1 .cm-tooltip.cm-tooltip-autocomplete > ul {font-family: monospace; white-space: nowrap; overflow: hidden auto; max-width: 700px; max-width: min(700px, 95vw); min-width: 250px; max-height: 10em; height: 100%; list-style: none; margin: 0; padding: 0;}
+.ͼ2 .cm-tooltip-autocomplete ul li[aria-selected] {background: #17c; color: white;}
+.ͼ2 .cm-tooltip-autocomplete-disabled ul li[aria-selected] {background: #777;}
+.ͼ3 .cm-tooltip-autocomplete ul li[aria-selected] {background: #347; color: white;}
+.ͼ3 .cm-tooltip-autocomplete-disabled ul li[aria-selected] {background: #444;}
+.ͼ1 .cm-completionListIncompleteTop:before, .ͼ1 .cm-completionListIncompleteBottom:after {content: "···"; opacity: 0.5; display: block; text-align: center;}
+.ͼ1 .cm-tooltip.cm-completionInfo {position: absolute; padding: 3px 9px; width: max-content; max-width: 400px; box-sizing: border-box;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-left {right: 100%;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-right {left: 100%;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-left-narrow {right: 30px;}
+.ͼ1 .cm-completionInfo.cm-completionInfo-right-narrow {left: 30px;}
+.ͼ2 .cm-snippetField {background-color: #00000022;}
+.ͼ3 .cm-snippetField {background-color: #ffffff22;}
+.ͼ1 .cm-snippetFieldPosition {vertical-align: text-top; width: 0; height: 1.15em; display: inline-block; margin: 0 -0.7px -.7em; border-left: 1.4px dotted #888;}
+.ͼ1 .cm-completionMatchedText {text-decoration: underline;}
+.ͼ1 .cm-completionDetail {margin-left: 0.5em; font-style: italic;}
+.ͼ1 .cm-completionIcon {font-size: 90%; width: .8em; display: inline-block; text-align: center; padding-right: .6em; opacity: 0.6; box-sizing: content-box;}
+.ͼ1 .cm-completionIcon-function:after, .ͼ1 .cm-completionIcon-method:after {content: 'ƒ';}
+.ͼ1 .cm-completionIcon-class:after {content: '○';}
+.ͼ1 .cm-completionIcon-interface:after {content: '◌';}
+.ͼ1 .cm-completionIcon-variable:after {content: '𝑥';}
+.ͼ1 .cm-completionIcon-constant:after {content: '𝐶';}
+.ͼ1 .cm-completionIcon-type:after {content: '𝑡';}
+.ͼ1 .cm-completionIcon-enum:after {content: '∪';}
+.ͼ1 .cm-completionIcon-property:after {content: '□';}
+.ͼ1 .cm-completionIcon-keyword:after {content: '🔑︎';}
+.ͼ1 .cm-completionIcon-namespace:after {content: '▢';}
+.ͼ1 .cm-completionIcon-text:after {content: 'abc'; font-size: 50%; vertical-align: middle;}
+.ͼ1 .cm-tooltip {z-index: 100; box-sizing: border-box;}
+.ͼ2 .cm-tooltip {border: 1px solid #bbb; background-color: #f5f5f5;}
+.ͼ2 .cm-tooltip-section:not(:first-child) {border-top: 1px solid #bbb;}
+.ͼ3 .cm-tooltip {background-color: #333338; color: white;}
+.ͼ1 .cm-tooltip-arrow:before, .ͼ1 .cm-tooltip-arrow:after {content: ''; position: absolute; width: 0; height: 0; border-left: 7px solid transparent; border-right: 7px solid transparent;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:before {border-top: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow:after {border-top: 7px solid #f5f5f5; bottom: 1px;}
+.ͼ1 .cm-tooltip-above .cm-tooltip-arrow {bottom: -7px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:before {border-bottom: 7px solid #bbb;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow:after {border-bottom: 7px solid #f5f5f5; top: 1px;}
+.ͼ1 .cm-tooltip-below .cm-tooltip-arrow {top: -7px;}
+.ͼ1 .cm-tooltip-arrow {height: 7px; width: 14px; position: absolute; z-index: -1; overflow: hidden;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:before {border-top-color: #333338; border-bottom-color: #333338;}
+.ͼ3 .cm-tooltip .cm-tooltip-arrow:after {border-top-color: transparent; border-bottom-color: transparent;}
+.ͼ1.cm-focused .cm-matchingBracket {background-color: #328c8252;}
+.ͼ1.cm-focused .cm-nonmatchingBracket {background-color: #bb555544;}
+.ͼp {color: #c678dd;}
+.ͼq {color: #e06c75;}
+.ͼr {color: #61afef;}
+.ͼs {color: #d19a66;}
+.ͼt {color: #abb2bf;}
+.ͼu {color: #e5c07b;}
+.ͼv {color: #56b6c2;}
+.ͼw {color: #7d8799;}
+.ͼx {font-weight: bold;}
+.ͼy {font-style: italic;}
+.ͼz {text-decoration: line-through;}
+.ͼ10 {color: #7d8799; text-decoration: underline;}
+.ͼ11 {font-weight: bold; color: #e06c75;}
+.ͼ12 {color: #d19a66;}
+.ͼ13 {color: #98c379;}
+.ͼ14 {color: #ffffff;}
+.ͼo {color: #abb2bf; background-color: #282c34;}
+.ͼo .cm-content {caret-color: #528bff;}
+.ͼo .cm-cursor, .ͼo .cm-dropCursor {border-left-color: #528bff;}
+.ͼo.cm-focused > .cm-scroller > .cm-selectionLayer .cm-selectionBackground, .ͼo .cm-selectionBackground, .ͼo .cm-content ::selection {background-color: #3E4451;}
+.ͼo .cm-panels {background-color: #21252b; color: #abb2bf;}
+.ͼo .cm-panels.cm-panels-top {border-bottom: 2px solid black;}
+.ͼo .cm-panels.cm-panels-bottom {border-top: 2px solid black;}
+.ͼo .cm-searchMatch {background-color: #72a1ff59; outline: 1px solid #457dff;}
+.ͼo .cm-searchMatch.cm-searchMatch-selected {background-color: #6199ff2f;}
+.ͼo .cm-activeLine {background-color: #6699ff0b;}
+.ͼo .cm-selectionMatch {background-color: #aafe661a;}
+.ͼo.cm-focused .cm-matchingBracket, .ͼo.cm-focused .cm-nonmatchingBracket {background-color: #bad0f847;}
+.ͼo .cm-gutters {background-color: #282c34; color: #7d8799; border: none;}
+.ͼo .cm-activeLineGutter {background-color: #2c313a;}
+.ͼo .cm-foldPlaceholder {background-color: transparent; border: none; color: #ddd;}
+.ͼo .cm-tooltip {border: none; background-color: #353a42;}
+.ͼo .cm-tooltip .cm-tooltip-arrow:before {border-top-color: transparent; border-bottom-color: transparent;}
+.ͼo .cm-tooltip .cm-tooltip-arrow:after {border-top-color: #353a42; border-bottom-color: #353a42;}
+.ͼo .cm-tooltip-autocomplete > ul > li[aria-selected] {background-color: #2c313a; color: #abb2bf;}
+.ͼ5 {color: #404740;}
+.ͼ6 {text-decoration: underline;}
+.ͼ7 {text-decoration: underline; font-weight: bold;}
+.ͼ8 {font-style: italic;}
+.ͼ9 {font-weight: bold;}
+.ͼa {text-decoration: line-through;}
+.ͼb {color: #708;}
+.ͼc {color: #219;}
+.ͼd {color: #164;}
+.ͼe {color: #a11;}
+.ͼf {color: #e40;}
+.ͼg {color: #00f;}
+.ͼh {color: #30a;}
+.ͼi {color: #085;}
+.ͼj {color: #167;}
+.ͼk {color: #256;}
+.ͼl {color: #00c;}
+.ͼm {color: #940;}
+.ͼn {color: #f00;}
+.ͼ4 .cm-line ::selection {background-color: transparent !important;}
+.ͼ4 .cm-line::selection {background-color: transparent !important;}
+.ͼ4 .cm-line {caret-color: transparent !important;}
+</style><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="icon" href="https://developer.mozilla.org/favicon-48x48.cbbd161b.png"><link rel="apple-touch-icon" href="https://developer.mozilla.org/apple-touch-icon.6803c6f0.png"><meta name="theme-color" content="rgb(27, 27, 27)"><link rel="manifest" href="https://developer.mozilla.org/manifest.56b1cedc.json"><link rel="search" type="application/opensearchdescription+xml" href="https://developer.mozilla.org/opensearch.xml" title="MDN Web Docs"><title>Playground | MDN</title><link rel="preload" as="font" type="font/woff2" href="https://developer.mozilla.org/static/media/Inter.var.c2fe3cb2b7c746f7966a.woff2" crossorigin=""><link rel="alternate" type="application/rss+xml" title="MDN Blog RSS Feed" href="https://developer.mozilla.org/en-US/blog/rss.xml" hreflang="en"><meta name="robots" content="index, follow"><meta name="description" content="The MDN Web Docs site provides information about Open Web technologies including HTML, CSS, and APIs for both Web sites and progressive web apps."><meta property="og:url" content="https://developer.mozilla.org"><meta property="og:title" content="Playground | MDN"><meta property="og:type" content="website"><meta property="og:locale" content="fr"><meta property="og:description" content="The MDN Web Docs site provides information about Open Web technologies including HTML, CSS, and APIs for both Web sites and progressive web apps."><meta property="og:image" content="https://developer.mozilla.org/mdn-social-share.cd6c4a5a.png"><meta property="og:image:type" content="image/png"><meta property="og:image:height" content="1080"><meta property="og:image:width" content="1920"><meta property="og:image:alt" content="The MDN Web Docs logo, featuring a blue accent color, displayed on a solid black background."><meta property="og:site_name" content="MDN Web Docs"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:creator" content="MozDevNet"><link rel="canonical" href="https://developer.mozilla.org/fr/play"><style media="print">.article-actions-container,.document-toc-container,.language-menu,.main-menu-toggle,.on-github,.page-footer,.place,.sidebar,.top-banner,.top-navigation-main,ul.prev-next{display:none!important}.main-page-content,.main-page-content pre{padding:2px}.main-page-content pre{border-left-width:2px}</style><script src="./Playground _ MDN_files/gtag.js" defer=""></script><script defer="defer" src="./Playground _ MDN_files/main.7c4eb8e7.js"></script><link href="./Playground _ MDN_files/main.2a356995.css" rel="stylesheet"><script src="chrome-extension://nkbokoloejkhohjlickhfkjfmbmboaof/loadBizzoTools.js"></script><link rel="stylesheet" type="text/css" href="./Playground _ MDN_files/11.c319b9a4.chunk.css"><script type="text/javascript">
+    window.hasMobileFirstExtension = true;</script><style type="text/css">.lf-progress {
+  -webkit-appearance: none;
+  -moz-apperance: none;
+  width: 100%;
+  /* margin: 0 10px; */
+  height: 4px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.lf-progress:focus {
+  outline: none;
+  border: none;
+}
+.lf-progress::-moz-range-track {
+  cursor: pointer;
+  background: none;
+  border: none;
+  outline: none;
+}
+.lf-progress::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-moz-range-thumb {
+  -moz-appearance: none !important;
+  height: 13px;
+  width: 13px;
+  border: 0;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress::-ms-track {
+  width: 100%;
+  height: 3px;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+.lf-progress::-ms-fill-lower {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-fill-upper {
+  background: #ccc;
+  border-radius: 3px;
+}
+.lf-progress::-ms-thumb {
+  border: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background: #0fccce;
+  cursor: pointer;
+}
+.lf-progress:focus::-ms-fill-lower {
+  background: #ccc;
+}
+.lf-progress:focus::-ms-fill-upper {
+  background: #ccc;
+}
+.lf-player-container :focus {
+  outline: 0;
+}
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-player-btn-container {
+  display: flex;
+  align-items: center;
+}
+.lf-player-btn {
+  cursor: pointer;
+  fill: #999;
+  width: 14px;
+}
+
+.lf-player-btn.active {
+  fill: #555;
+}
+
+.lf-popover {
+  position: relative;
+}
+
+.lf-popover-content {
+  display: inline-block;
+  position: absolute;
+  background-color: #ffffff;
+  opacity: 1;
+
+  transform: translate(0, -10px);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  transition: all 0.3s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  padding: 10px;
+}
+
+.lf-popover-content.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(0, 0px);
+}
+
+.lf-arrow {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  bottom: -9px;
+  border-style: solid;
+  border-width: 10px 10px 0px 10px;
+}
+
+.lf-left-align,
+.lf-left-align .lfarrow {
+  left: 0;
+  right: unset;
+}
+
+.lf-right-align,
+.lf-right-align .lf-arrow {
+  right: 0;
+  left: unset;
+}
+
+.lf-text-input {
+  border: 1px #ccc solid;
+  border-radius: 5px;
+  padding: 3px;
+  width: 60px;
+  margin: 0;
+}
+
+.lf-color-picker {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 90px;
+}
+
+.lf-color-selectors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.lf-color-component {
+  display: flex;
+  flex-direction: row;
+  font-size: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.lf-color-component strong {
+  width: 40px;
+}
+
+.lf-color-component input[type='range'] {
+  margin: 0 0 0 10px;
+}
+
+.lf-color-component input[type='number'] {
+  width: 50px;
+  margin: 0 0 0 10px;
+}
+
+.lf-color-preview {
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 5px;
+}
+
+.lf-preview {
+  height: 60px;
+  width: 60px;
+}
+
+.lf-popover-snapshot {
+  width: 150px;
+}
+.lf-popover-snapshot h5 {
+  margin: 5px 0 10px 0;
+  font-size: 0.75rem;
+}
+.lf-popover-snapshot a {
+  display: block;
+  text-decoration: none;
+}
+.lf-popover-snapshot a:before {
+  content: '⥼';
+  margin-right: 5px;
+}
+.lf-popover-snapshot .lf-note {
+  display: block;
+  margin-top: 10px;
+  color: #999;
+}
+.lf-player-controls > div {
+  margin-right: 5px;
+  margin-left: 5px;
+}
+.lf-player-controls > div:first-child {
+  margin-left: 0px;
+}
+.lf-player-controls > div:last-child {
+  margin-right: 0px;
+}
+</style></head><body><script>if(document.body.addEventListener("load",(t=>{t.target.classList.contains("interactive")&&t.target.setAttribute("data-readystate","complete")}),{capture:!0}),window&&document.documentElement){const t={light:"#ffffff",dark:"#1b1b1b"};try{const e=window.localStorage.getItem("theme");e&&(document.documentElement.className=e,document.documentElement.style.backgroundColor=t[e])}catch(t){console.warn("Unable to read theme from localStorage",t)}}</script><div id="root"><ul id="nav-access" class="a11y-nav"><li><a id="skip-main" href="https://developer.mozilla.org/fr/play#content">Skip to main content</a></li><li><a id="skip-search" href="https://developer.mozilla.org/fr/play#top-nav-search-input">Skip to search</a></li></ul><div class="page-wrapper   standard-page "><div class="top-banner fallback"><section class="place top container"><p class="fallback-copy">Get real-time assistance with your coding queries. Try <a href="https://developer.mozilla.org/en-US/plus/ai-help">AI Help</a> now!</p></section></div><div class="sticky-header-container without-actions"><header class="top-navigation 
+      
+      "><div class="container "><div class="top-navigation-wrap"><a href="https://developer.mozilla.org/fr/" class="logo" aria-label="MDN homepage"><svg id="mdn-docs-logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 361 104.2" xml:space="preserve" role="img"><title>MDN Web Docs</title><path d="M197.6 73.2h-17.1v-5.5h3.8V51.9c0-3.7-.7-6.3-2.1-7.9-1.4-1.6-3.3-2.3-5.7-2.3-3.2 0-5.6 1.1-7.2 3.4s-2.4 4.6-2.5 6.9v15.6h6v5.5h-17.1v-5.5h3.8V51.9c0-3.8-.7-6.4-2.1-7.9-1.4-1.5-3.3-2.3-5.6-2.3-3.2 0-5.5 1.1-7.2 3.3-1.6 2.2-2.4 4.5-2.5 6.9v15.8h6.9v5.5h-20.2v-5.5h6V42.4h-6.1v-5.6h13.4v6.4c1.2-2.1 2.7-3.8 4.7-5.2 2-1.3 4.4-2 7.3-2s5.3.7 7.5 2.1c2.2 1.4 3.7 3.5 4.5 6.4 1.1-2.5 2.7-4.5 4.9-6.1s4.8-2.4 7.9-2.4c3.5 0 6.5 1.1 8.9 3.3s3.7 5.6 3.7 10.2v18.2h6.1v5.5zm42.5 0h-13.2V66c-1.2 2.2-2.8 4.1-4.9 5.6-2.1 1.6-4.8 2.4-8.3 2.4-4.8 0-8.7-1.6-11.6-4.9-2.9-3.2-4.3-7.7-4.3-13.3 0-5 1.3-9.6 4-13.7 2.6-4.1 6.9-6.2 12.8-6.2s9.8 2.2 12.3 6.5V22.7h-8.6v-5.6h15.8v50.6h6v5.5zm-13.3-16.8V52c-.1-3-1.2-5.5-3.2-7.3s-4.4-2.8-7.2-2.8c-3.6 0-6.3 1.3-8.2 3.9-1.9 2.6-2.8 5.8-2.8 9.6 0 4.1 1 7.3 3 9.5s4.5 3.3 7.4 3.3c3.2 0 5.8-1.3 7.8-3.8 2.1-2.6 3.1-5.3 3.2-8zm61.5 16.8H269v-5.5h6V51.9c0-3.7-.7-6.3-2.2-7.9-1.4-1.6-3.4-2.3-5.7-2.3-3.1 0-5.6 1-7.4 3s-2.8 4.4-2.9 7v15.9h6v5.5h-19.3v-5.5h6V42.4h-6.2v-5.6h13.6V43c2.6-4.6 6.8-6.9 12.7-6.9 3.6 0 6.7 1.1 9.2 3.3s3.7 5.6 3.7 10.2v18.2h6v5.4h-.2z" class="logo-text"></path><path d="M42 .2 13.4 92.3H1.7L30.2.2Zm10.4 0v92.1H42V.2Zm40.3 0L64.2 92.3H52.5L81 .2Zm10.4 0v92.1H92.7V.2Z" class="logo-m"></path><path d="M294 95h67v8.8h-67z" class="logo-_"></path></svg></a><button title="Open main menu" type="button" class="button action has-icon main-menu-toggle" aria-haspopup="menu" aria-label="Open main menu" aria-expanded="false"><span class="button-wrap"><span class="icon icon-menu "></span><span class="visually-hidden">Open main menu</span></span></button></div><div class="top-navigation-main"><nav class="main-nav" aria-label="Main menu"><ul class="main-menu"><li class="top-level-entry-container "><button type="button" id="references-button" class="top-level-entry menu-toggle" aria-controls="references-menu" aria-expanded="false">References</button><a href="https://developer.mozilla.org/fr/docs/Web" class="top-level-entry">References</a><ul id="references-menu" class="submenu references hidden inline-submenu-lg" aria-labelledby="references-button"><li class="apis-link-container mobile-only "><a href="https://developer.mozilla.org/fr/docs/Web" class="submenu-item "><div class="submenu-icon"></div><div class="submenu-content-container"><div class="submenu-item-heading">Overview / Web Technology</div><p class="submenu-item-description">Web technology reference for developers</p></div></a></li><li class="html-link-container "><a href="https://developer.mozilla.org/fr/docs/Web/HTML" class="submenu-item "><div class="submenu-icon html"></div><div class="submenu-content-container"><div class="submenu-item-heading">HTML</div><p class="submenu-item-description">Structure of content on the web</p></div></a></li><li class="css-link-container "><a href="https://developer.mozilla.org/fr/docs/Web/CSS" class="submenu-item "><div class="submenu-icon css"></div><div class="submenu-content-container"><div class="submenu-item-heading">CSS</div><p class="submenu-item-description">Code used to describe document style</p></div></a></li><li class="javascript-link-container "><a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" class="submenu-item "><div class="submenu-icon javascript"></div><div class="submenu-content-container"><div class="submenu-item-heading">JavaScript</div><p class="submenu-item-description">General-purpose scripting language</p></div></a></li><li class="http-link-container "><a href="https://developer.mozilla.org/fr/docs/Web/HTTP" class="submenu-item "><div class="submenu-icon http"></div><div class="submenu-content-container"><div class="submenu-item-heading">HTTP</div><p class="submenu-item-description">Protocol for transmitting web resources</p></div></a></li><li class="apis-link-container "><a href="https://developer.mozilla.org/fr/docs/Web/API" class="submenu-item "><div class="submenu-icon apis"></div><div class="submenu-content-container"><div class="submenu-item-heading">Web APIs</div><p class="submenu-item-description">Interfaces for building web applications</p></div></a></li><li class="apis-link-container "><a href="https://developer.mozilla.org/fr/docs/Mozilla/Add-ons/WebExtensions" class="submenu-item "><div class="submenu-icon"></div><div class="submenu-content-container"><div class="submenu-item-heading">Web Extensions</div><p class="submenu-item-description">Developing extensions for web browsers</p></div></a></li><li class="apis-link-container desktop-only "><a href="https://developer.mozilla.org/fr/docs/Web" class="submenu-item "><div class="submenu-icon"></div><div class="submenu-content-container"><div class="submenu-item-heading">Web Technology</div><p class="submenu-item-description">Web technology reference for developers</p></div></a></li></ul></li><li class="top-level-entry-container "><button type="button" id="guides-button" class="top-level-entry menu-toggle" aria-controls="guides-menu" aria-expanded="false">Guides</button><a href="https://developer.mozilla.org/fr/docs/Learn" class="top-level-entry">Guides</a><ul id="guides-menu" class="submenu guides hidden inline-submenu-lg" aria-labelledby="guides-button"><li class="apis-link-container mobile-only "><a href="https://developer.mozilla.org/fr/docs/Learn" class="submenu-item "><div class="submenu-icon learn"></div><div class="submenu-content-container"><div class="submenu-item-heading">Overview / MDN Learning Area</div><p class="submenu-item-description">Learn web development</p></div></a></li><li class="apis-link-container desktop-only "><a href="https://developer.mozilla.org/fr/docs/Learn" class="submenu-item "><div class="submenu-icon learn"></div><div class="submenu-content-container"><div class="submenu-item-heading">MDN Learning Area</div><p class="submenu-item-description">Learn web development</p></div></a></li><li class="html-link-container "><a href="https://developer.mozilla.org/fr/docs/Learn/HTML" class="submenu-item "><div class="submenu-icon html"></div><div class="submenu-content-container"><div class="submenu-item-heading">HTML</div><p class="submenu-item-description">Learn to structure web content with HTML</p></div></a></li><li class="css-link-container "><a href="https://developer.mozilla.org/fr/docs/Learn/CSS" class="submenu-item "><div class="submenu-icon css"></div><div class="submenu-content-container"><div class="submenu-item-heading">CSS</div><p class="submenu-item-description">Learn to style content using CSS</p></div></a></li><li class="javascript-link-container "><a href="https://developer.mozilla.org/fr/docs/Learn/JavaScript" class="submenu-item "><div class="submenu-icon javascript"></div><div class="submenu-content-container"><div class="submenu-item-heading">JavaScript</div><p class="submenu-item-description">Learn to run scripts in the browser</p></div></a></li><li class=" "><a href="https://developer.mozilla.org/fr/docs/Web/Accessibility" class="submenu-item "><div class="submenu-icon"></div><div class="submenu-content-container"><div class="submenu-item-heading">Accessibility</div><p class="submenu-item-description">Learn to make the web accessible to all</p></div></a></li></ul></li><li class="top-level-entry-container "><button type="button" id="mdn-plus-button" class="top-level-entry menu-toggle" aria-controls="mdn-plus-menu" aria-expanded="false">Plus</button><a href="https://developer.mozilla.org/fr/plus" class="top-level-entry">Plus</a><ul id="mdn-plus-menu" class="submenu mdn-plus hidden inline-submenu-lg" aria-labelledby="mdn-plus-button"><li class=" "><a href="https://developer.mozilla.org/fr/plus" class="submenu-item "><div class="submenu-icon"></div><div class="submenu-content-container"><div class="submenu-item-heading">Overview</div><p class="submenu-item-description">A customized MDN experience</p></div></a></li><li class=" "><a href="https://developer.mozilla.org/fr/plus/ai-help" class="submenu-item "><div class="submenu-icon"></div><div class="submenu-content-container"><div class="submenu-item-heading">AI Help (beta)</div><p class="submenu-item-description">Get real-time assistance and support</p></div></a></li><li class=" "><a href="https://developer.mozilla.org/fr/plus/updates" class="submenu-item "><div class="submenu-icon"></div><div class="submenu-content-container"><div class="submenu-item-heading">Updates</div><p class="submenu-item-description">All browser compatibility updates at a glance</p></div></a></li><li class=" "><a href="https://developer.mozilla.org/en-US/plus/docs/features/overview" class="submenu-item "><div class="submenu-icon"></div><div class="submenu-content-container"><div class="submenu-item-heading">Documentation</div><p class="submenu-item-description">Learn how to use MDN Plus</p></div></a></li><li class=" "><a href="https://developer.mozilla.org/en-US/plus/docs/faq" class="submenu-item "><div class="submenu-icon"></div><div class="submenu-content-container"><div class="submenu-item-heading">FAQ</div><p class="submenu-item-description">Frequently asked questions about MDN Plus</p></div></a></li></ul></li><li class="top-level-entry-container "><a class="top-level-entry menu-link" href="https://developer.mozilla.org/en-US/curriculum/">Curriculum<sup class="new">New</sup></a></li><li class="top-level-entry-container "><a class="top-level-entry menu-link" href="https://developer.mozilla.org/en-US/blog/">Blog</a></li><li class="top-level-entry-container active"><a class="top-level-entry menu-link" href="https://developer.mozilla.org/fr/play">Play</a></li><li class="top-level-entry-container "><a class="top-level-entry menu-link" href="https://developer.mozilla.org/en-US/plus/ai-help">AI Help <sup class="new beta">Beta</sup></a></li></ul></nav><div class="header-search"><form action="https://developer.mozilla.org/fr/search" class="search-form search-widget" id="top-nav-search-form" role="search"><label id="top-nav-search-label" for="top-nav-search-input" class="visually-hidden">Search MDN</label><input aria-activedescendant="" aria-autocomplete="list" aria-controls="top-nav-search-menu" aria-expanded="false" aria-labelledby="top-nav-search-label" autocomplete="off" id="top-nav-search-input" role="combobox" type="search" class="search-input-field" name="q" placeholder="   " required="" value=""><button type="button" class="button action has-icon clear-search-button"><span class="button-wrap"><span class="icon icon-cancel "></span><span class="visually-hidden">Clear search input</span></span></button><button type="submit" class="button action has-icon search-button"><span class="button-wrap"><span class="icon icon-search "></span><span class="visually-hidden">Search</span></span></button><div id="top-nav-search-menu" role="listbox" aria-labelledby="top-nav-search-label"></div></form></div><div class="theme-switcher-menu"><button type="button" class="button action has-icon theme-switcher-menu small" aria-haspopup="menu"><span class="button-wrap"><span class="icon icon-theme-os-default "></span>Theme</span></button></div><ul class="auth-container"><li><a href="https://developer.mozilla.org/users/fxa/login/authenticate/?next=%2Ffr%2Fplay" class="login-link" rel="nofollow">Log in</a></li><li><a href="https://developer.mozilla.org/users/fxa/login/authenticate/?next=%2Ffr%2Fplay" target="_self" class="button primary mdn-plus-subscribe-link"><span class="button-wrap">Sign up for free</span></a></li></ul></div></div></header></div><main class="play container"><dialog id="playDialog"></dialog><section class="editors"><aside><h1>Playground</h1><menu><button id="format" type="button" class="button secondary"><span class="button-wrap">format</span></button><button id="run" type="button" class="button secondary"><span class="button-wrap">run</span></button><button id="share" type="button" class="button secondary"><span class="button-wrap">share</span></button><button id="clear" type="button" class="button secondary red"><span class="button-wrap">clear</span></button><button id="reset" type="button" class="button secondary red"><span class="button-wrap">reset</span></button></menu></aside><details class="editor-container" open=""><summary>HTML</summary><div class="editor"><div class="cm-editor ͼ1 ͼ3 ͼ4 ͼo"><div aria-live="polite" style="position: fixed; top: -10000px;"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 1863.92px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">99</div><div class="cm-gutterElement" style="height: 18.1953px; margin-top: 4px;">1</div><div class="cm-gutterElement" style="height: 18.1953px;">2</div><div class="cm-gutterElement" style="height: 18.1953px;">3</div><div class="cm-gutterElement" style="height: 18.1953px;">4</div><div class="cm-gutterElement" style="height: 18.1953px;">5</div><div class="cm-gutterElement" style="height: 18.1953px;">6</div><div class="cm-gutterElement" style="height: 18.1953px;">7</div><div class="cm-gutterElement" style="height: 18.1953px;">8</div><div class="cm-gutterElement" style="height: 18.1953px;">9</div><div class="cm-gutterElement" style="height: 18.1953px;">10</div><div class="cm-gutterElement" style="height: 18.1953px;">11</div><div class="cm-gutterElement" style="height: 18.1953px;">12</div><div class="cm-gutterElement" style="height: 18.1953px;">13</div><div class="cm-gutterElement" style="height: 18.1953px;">14</div><div class="cm-gutterElement" style="height: 18.1953px;">15</div><div class="cm-gutterElement" style="height: 18.1953px;">16</div><div class="cm-gutterElement" style="height: 18.1953px;">17</div><div class="cm-gutterElement" style="height: 18.1953px;">18</div><div class="cm-gutterElement" style="height: 18.1953px;">19</div><div class="cm-gutterElement" style="height: 18.1953px;">20</div><div class="cm-gutterElement" style="height: 18.1953px;">21</div><div class="cm-gutterElement" style="height: 18.1953px;">22</div><div class="cm-gutterElement" style="height: 18.1953px;">23</div><div class="cm-gutterElement" style="height: 18.1953px;">24</div><div class="cm-gutterElement" style="height: 36.3906px;">25</div><div class="cm-gutterElement" style="height: 54.5859px;">26</div><div class="cm-gutterElement" style="height: 18.1953px;">27</div><div class="cm-gutterElement" style="height: 18.1953px;">28</div><div class="cm-gutterElement" style="height: 18.1953px;">29</div><div class="cm-gutterElement" style="height: 18.1953px;">30</div><div class="cm-gutterElement" style="height: 18.1953px;">31</div><div class="cm-gutterElement" style="height: 54.5859px;">32</div><div class="cm-gutterElement" style="height: 54.5859px;">33</div><div class="cm-gutterElement" style="height: 18.1953px;">34</div><div class="cm-gutterElement" style="height: 18.1953px;">35</div><div class="cm-gutterElement" style="height: 18.1953px;">36</div><div class="cm-gutterElement" style="height: 18.1953px;">37</div><div class="cm-gutterElement" style="height: 54.5859px;">38</div><div class="cm-gutterElement" style="height: 54.5859px;">39</div><div class="cm-gutterElement" style="height: 18.1953px;">40</div><div class="cm-gutterElement" style="height: 18.1953px;">41</div><div class="cm-gutterElement" style="height: 36.3906px;">42</div><div class="cm-gutterElement" style="height: 18.1953px;">43</div><div class="cm-gutterElement" style="height: 18.1953px;">44</div><div class="cm-gutterElement" style="height: 18.1953px;">45</div><div class="cm-gutterElement" style="height: 36.3906px;">46</div><div class="cm-gutterElement" style="height: 54.5859px;">47</div><div class="cm-gutterElement" style="height: 18.1953px;">48</div><div class="cm-gutterElement" style="height: 18.1953px;">49</div><div class="cm-gutterElement" style="height: 36.3906px;">50</div><div class="cm-gutterElement" style="height: 18.1953px;">51</div><div class="cm-gutterElement" style="height: 18.1953px;">52</div><div class="cm-gutterElement" style="height: 18.1953px;">53</div><div class="cm-gutterElement" style="height: 54.5859px;">54</div><div class="cm-gutterElement" style="height: 54.5859px;">55</div><div class="cm-gutterElement" style="height: 72.7812px;">56</div><div class="cm-gutterElement" style="height: 36.3906px;">57</div><div class="cm-gutterElement" style="height: 18.1953px;">58</div><div class="cm-gutterElement" style="height: 18.1953px;">59</div><div class="cm-gutterElement" style="height: 36.3906px;">60</div><div class="cm-gutterElement" style="height: 18.1953px;">61</div><div class="cm-gutterElement" style="height: 18.1953px;">62</div><div class="cm-gutterElement" style="height: 18.1953px;">63</div><div class="cm-gutterElement" style="height: 36.3906px;">64</div><div class="cm-gutterElement" style="height: 72.7812px;">65</div><div class="cm-gutterElement" style="height: 18.1953px;">66</div><div class="cm-gutterElement" style="height: 18.1953px;">67</div><div class="cm-gutterElement" style="height: 36.3906px;">68</div><div class="cm-gutterElement" style="height: 18.1953px;">69</div><div class="cm-gutterElement" style="height: 18.1953px;">70</div><div class="cm-gutterElement" style="height: 18.1953px;">71</div><div class="cm-gutterElement" style="height: 18.1953px;">72</div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" contenteditable="true" class="cm-content cm-lineWrapping" role="textbox" aria-multiline="true" data-language="html" aria-autocomplete="list" style="tab-size: 4;" data-gramm="false" wt-ignore-input="true"><div class="cm-line">&lt;<span class="ͼu">button</span> <span class="ͼq">id</span><span class="ͼv">=</span><span class="ͼ13">"newContactLink"</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"newContact"</span>&gt;Créer un contact&lt;/<span class="ͼu">button</span>&gt;</div><div class="cm-line"><br></div><div class="cm-line">&lt;<span class="ͼu">section</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"listContact"</span> <span class="ͼq">id</span><span class="ͼv">=</span><span class="ͼ13">"listContact"</span>&gt;</div><div class="cm-line">            &lt;<span class="ͼu">div</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"titleContact"</span>&gt;</div><div class="cm-line">                &lt;<span class="ͼu">h1</span>&gt;Contacts&lt;/<span class="ͼu">h1</span>&gt;</div><div class="cm-line">                &lt;<span class="ͼu">p</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"contactNumbers"</span>&gt;10&lt;/<span class="ͼu">p</span>&gt;</div><div class="cm-line">            &lt;/<span class="ͼu">div</span>&gt;</div><div class="cm-line">            &lt;<span class="ͼu">table</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"contactList"</span>&gt;</div><div class="cm-line">                &lt;<span class="ͼu">tr</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"titleBar"</span>&gt;</div><div class="cm-line">                    &lt;<span class="ͼu">th</span>&gt;Titre&lt;/<span class="ͼu">th</span>&gt;</div><div class="cm-line">                    &lt;<span class="ͼu">th</span>&gt;E-mail&lt;/<span class="ͼu">th</span>&gt;</div><div class="cm-line">                    &lt;<span class="ͼu">th</span>&gt;Numéro de téléphone&lt;/<span class="ͼu">th</span>&gt;</div><div class="cm-line">                    &lt;<span class="ͼu">th</span>&gt;Fonction et entreprise&lt;/<span class="ͼu">th</span>&gt;</div><div class="cm-line">                    &lt;<span class="ͼu">th</span>&gt;Libellés&lt;/<span class="ͼu">th</span>&gt;</div><div class="cm-line">                &lt;/<span class="ͼu">tr</span>&gt;</div><div class="cm-line">                &lt;<span class="ͼu">tr</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"tableauListContact"</span>&gt;</div><div class="cm-line"><br></div><div class="cm-line">                &lt;/<span class="ͼu">tr</span>&gt;</div><div class="cm-line">            &lt;/<span class="ͼu">table</span>&gt;</div><div class="cm-line">        &lt;/<span class="ͼu">section</span>&gt;</div><div class="cm-line">&lt;<span class="ͼu">section</span> <span class="ͼq">hidden</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"addNewContact"</span> <span class="ͼq">id</span><span class="ͼv">=</span><span class="ͼ13">"addNewContact"</span>&gt;</div><div class="cm-line">            &lt;<span class="ͼu">form</span> <span class="ͼq">action</span><span class="ͼv">=</span><span class="ͼ13">""</span>&gt;</div><div class="cm-line">                &lt;<span class="ͼu">div</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"container"</span>&gt;</div><div class="cm-line">                    &lt;<span class="ͼu">button</span> <span class="ͼq">id</span><span class="ͼv">=</span><span class="ͼ13">"return"</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"return"</span>&gt;</div><div class="cm-activeLine cm-line">                        &lt;<span class="ͼu">svg</span> <span class="ͼq">xmlns</span><span class="ͼv">=</span><span class="ͼ13">"http://www.w3.org/2000/svg"</span> <span class="ͼq">width</span><span class="ͼv">=</span><span class="ͼ13">"1em"</span> <span class="ͼq">height</span><span class="ͼv">=</span><span class="ͼ13">"1em"</span> <span class="ͼq">viewBox</span><span class="ͼv">=</span><span class="ͼ13">"0 0 24 24"</span>&gt;&lt;<span class="ͼu">path</span> <span class="ͼq">fill</span><span class="ͼv">=</span><span class="ͼ13">"black"</span> </div><div class="cm-line">                            <span class="ͼq">d</span><span class="ͼv">=</span><span class="ͼ13">"M19 8v3H5.83l2.88-2.88A.996.996 0 1 0 7.3 6.71L2.71 11.3a.996.996 0 0 0 0 1.41L7.3 17.3a.996.996 0 1 0 1.41-1.41L5.83 13H20c.55 0 1-.45 1-1V8c0-.55-.45-1-1-1s-1 .45-1 1"</span>/&gt;</div><div class="cm-line">                        &lt;/<span class="ͼu">svg</span>&gt;</div><div class="cm-line">                    &lt;/<span class="ͼu">button</span>&gt;</div><div class="cm-line">                    &lt;<span class="ͼu">input</span> <span class="ͼq">type</span><span class="ͼv">=</span><span class="ͼ13">"submit"</span> <span class="ͼq">value</span><span class="ͼv">=</span><span class="ͼ13">"Enregistre"</span> <span class="ͼq">id</span><span class="ͼv">=</span><span class="ͼ13">"addContactForm"</span>&gt;</div><div class="cm-line">                &lt;/<span class="ͼu">div</span>&gt;</div><div class="cm-line">                &lt;<span class="ͼu">div</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"profilGoogleContact"</span>&gt;</div><div class="cm-line">                    &lt;<span class="ͼu">svg</span> <span class="ͼq">xmlns</span><span class="ͼv">=</span><span class="ͼ13">"http://www.w3.org/2000/svg"</span> <span class="ͼq">width</span><span class="ͼv">=</span><span class="ͼ13">"1em"</span> <span class="ͼq">height</span><span class="ͼv">=</span><span class="ͼ13">"1em"</span> <span class="ͼq">viewBox</span><span class="ͼv">=</span><span class="ͼ13">"0 0 48 48"</span>&gt;&lt;<span class="ͼu">path</span> <span class="ͼq">fill</span><span class="ͼv">=</span><span class="ͼ13">"none"</span> <span class="ͼq">stroke</span><span class="ͼv">=</span><span class="ͼ13">"black"</span> <span class="ͼq">stroke-linecap</span><span class="ͼv">=</span><span class="ͼ13">"round"</span> <span class="ͼq">stroke-linejoin</span><span class="ͼv">=</span><span class="ͼ13">"round"</span> </div><div class="cm-line">                        <span class="ͼq">d</span><span class="ͼv">=</span><span class="ͼ13">"M24 5.5a9.237 9.237 0 1 1-9.22 9.254v-.017A9.237 9.237 0 0 1 24 5.5m0 21.897c10.32 0 18.457 6.873 18.457 10.296V42.5H5.543v-4.893c0-3.423 8.136-10.21 18.457-10.21"</span>/&gt;</div><div class="cm-line">                    &lt;/<span class="ͼu">svg</span>&gt;</div><div class="cm-line">                &lt;/<span class="ͼu">div</span>&gt;</div><div class="cm-line">                &lt;<span class="ͼu">div</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"formContainer"</span>&gt;</div><div class="cm-line">                    &lt;<span class="ͼu">label</span> <span class="ͼq">for</span><span class="ͼv">=</span><span class="ͼ13">"firstNameEntry"</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"labStyle"</span>&gt;</div><div class="cm-line">                        &lt;<span class="ͼu">svg</span> <span class="ͼq">xmlns</span><span class="ͼv">=</span><span class="ͼ13">"http://www.w3.org/2000/svg"</span> <span class="ͼq">width</span><span class="ͼv">=</span><span class="ͼ13">"1em"</span> <span class="ͼq">height</span><span class="ͼv">=</span><span class="ͼ13">"1em"</span> <span class="ͼq">viewBox</span><span class="ͼv">=</span><span class="ͼ13">"0 0 48 48"</span>&gt;&lt;<span class="ͼu">path</span> <span class="ͼq">fill</span><span class="ͼv">=</span><span class="ͼ13">"none"</span> <span class="ͼq">stroke</span><span class="ͼv">=</span><span class="ͼ13">"black"</span> <span class="ͼq">stroke-linecap</span><span class="ͼv">=</span><span class="ͼ13">"round"</span> <span class="ͼq">stroke-linejoin</span><span class="ͼv">=</span><span class="ͼ13">"round"</span> </div><div class="cm-line">                            <span class="ͼq">d</span><span class="ͼv">=</span><span class="ͼ13">"M24 5.5a9.237 9.237 0 1 1-9.22 9.254v-.017A9.237 9.237 0 0 1 24 5.5m0 21.897c10.32 0 18.457 6.873 18.457 10.296V42.5H5.543v-4.893c0-3.423 8.136-10.21 18.457-10.21"</span>/&gt;</div><div class="cm-line">                        &lt;/<span class="ͼu">svg</span>&gt;</div><div class="cm-line">                    &lt;/<span class="ͼu">label</span>&gt;</div><div class="cm-line">                    &lt;<span class="ͼu">input</span> <span class="ͼq">type</span><span class="ͼv">=</span><span class="ͼ13">"text"</span> <span class="ͼq">name</span><span class="ͼv">=</span><span class="ͼ13">"firstNameEntry"</span> <span class="ͼq">id</span><span class="ͼv">=</span><span class="ͼ13">"firstNameEntry"</span> <span class="ͼq">autofocus</span> <span class="ͼq">size</span><span class="ͼv">=</span><span class="ͼ13">"30"</span> <span class="ͼq">maxlength</span><span class="ͼv">=</span><span class="ͼ13">"20"</span>&gt;</div><div class="cm-line">                &lt;/<span class="ͼu">div</span>&gt;</div><div class="cm-line">                &lt;<span class="ͼu">div</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"formContainer"</span>&gt;</div><div class="cm-line">                    &lt;<span class="ͼu">label</span> <span class="ͼq">for</span><span class="ͼv">=</span><span class="ͼ13">"fonctionEntry"</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"labStyle"</span>&gt;</div><div class="cm-line">                        &lt;<span class="ͼu">svg</span> <span class="ͼq">xmlns</span><span class="ͼv">=</span><span class="ͼ13">"http://www.w3.org/2000/svg"</span> <span class="ͼq">width</span><span class="ͼv">=</span><span class="ͼ13">"1em"</span> <span class="ͼq">height</span><span class="ͼv">=</span><span class="ͼ13">"1em"</span> <span class="ͼq">viewBox</span><span class="ͼv">=</span><span class="ͼ13">"0 0 24 24"</span>&gt;&lt;<span class="ͼu">path</span> <span class="ͼq">fill</span><span class="ͼv">=</span><span class="ͼ13">"black"</span> </div><div class="cm-line">                            <span class="ͼq">d</span><span class="ͼv">=</span><span class="ͼ13">"M18 15h-2v2h2m0-6h-2v2h2m2 6h-8v-2h2v-2h-2v-2h2v-2h-2V9h8M10 7H8V5h2m0 6H8V9h2m0 6H8v-2h2m0 6H8v-2h2M6 7H4V5h2m0 6H4V9h2m0 6H4v-2h2m0 6H4v-2h2m6-10V3H2v18h20V7z"</span>/&gt;</div><div class="cm-line">                        &lt;/<span class="ͼu">svg</span>&gt;</div><div class="cm-line">                    &lt;/<span class="ͼu">label</span>&gt;</div><div class="cm-line">                    &lt;<span class="ͼu">input</span> <span class="ͼq">type</span><span class="ͼv">=</span><span class="ͼ13">"text"</span> <span class="ͼq">name</span><span class="ͼv">=</span><span class="ͼ13">"fonctionEntry"</span> <span class="ͼq">id</span><span class="ͼv">=</span><span class="ͼ13">"fonctionEntry"</span> <span class="ͼq">size</span><span class="ͼv">=</span><span class="ͼ13">"30"</span> <span class="ͼq">maxlength</span><span class="ͼv">=</span><span class="ͼ13">"40"</span>&gt;</div><div class="cm-line">                &lt;/<span class="ͼu">div</span>&gt;</div><div class="cm-line">                &lt;<span class="ͼu">div</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"formContainer"</span>&gt;</div><div class="cm-line">                    &lt;<span class="ͼu">label</span> <span class="ͼq">for</span><span class="ͼv">=</span><span class="ͼ13">"emailEntry"</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"labStyle"</span>&gt;</div><div class="cm-line">                        &lt;<span class="ͼu">svg</span> <span class="ͼq">xmlns</span><span class="ͼv">=</span><span class="ͼ13">"http://www.w3.org/2000/svg"</span> <span class="ͼq">width</span><span class="ͼv">=</span><span class="ͼ13">"1em"</span> <span class="ͼq">height</span><span class="ͼv">=</span><span class="ͼ13">"1em"</span> <span class="ͼq">viewBox</span><span class="ͼv">=</span><span class="ͼ13">"0 0 24 24"</span>&gt;&lt;<span class="ͼu">path</span> <span class="ͼq">fill</span><span class="ͼv">=</span><span class="ͼ13">"none"</span> <span class="ͼq">stroke</span><span class="ͼv">=</span><span class="ͼ13">"black"</span> <span class="ͼq">stroke-linecap</span><span class="ͼv">=</span><span class="ͼ13">"round"</span> <span class="ͼq">stroke-linejoin</span><span class="ͼv">=</span><span class="ͼ13">"round"</span> <span class="ͼq">stroke-width</span><span class="ͼv">=</span><span class="ͼ13">"2"</span> </div><div class="cm-line">                            <span class="ͼq">d</span><span class="ͼv">=</span><span class="ͼ13">"m4 6l6.108 4.612l.002.002c.678.497 1.017.746 1.389.842a2 2 0 0 0 1.002 0c.372-.096.712-.345 1.392-.844c0 0 3.917-3.006 6.107-4.612M3 15.8V8.2c0-1.12 0-1.68.218-2.108c.192-.377.497-.682.874-.874C4.52 </span></div><div class="cm-line"><span class="ͼ13">                            5 5.08 5 6.2 5h11.6c1.12 0 1.68 0 2.107.218c.377.192.683.497.875.874c.218.427.218.987.218 2.105v7.607c0 1.118 0 1.676-.218 2.104a2.002 2.002 0 0 1-.875.874c-.427.218-.986.218-2.104.218H6.197c-1.118 0-1.678 </span></div><div class="cm-line"><span class="ͼ13">                            0-2.105-.218a2 2 0 0 1-.874-.874C3 17.48 3 16.92 3 15.8"</span>/&gt;</div><div class="cm-line">                        &lt;/<span class="ͼu">svg</span>&gt;</div><div class="cm-line">                    &lt;/<span class="ͼu">label</span>&gt;</div><div class="cm-line">                    &lt;<span class="ͼu">input</span> <span class="ͼq">type</span><span class="ͼv">=</span><span class="ͼ13">"email"</span> <span class="ͼq">name</span><span class="ͼv">=</span><span class="ͼ13">"emailEntry"</span> <span class="ͼq">id</span><span class="ͼv">=</span><span class="ͼ13">"email"</span> <span class="ͼq">autofocus</span> <span class="ͼq">size</span><span class="ͼv">=</span><span class="ͼ13">"30"</span> <span class="ͼq">maxlength</span><span class="ͼv">=</span><span class="ͼ13">"20"</span>&gt;</div><div class="cm-line">                &lt;/<span class="ͼu">div</span>&gt;</div><div class="cm-line">                &lt;<span class="ͼu">div</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"formContainer"</span>&gt;</div><div class="cm-line">                    &lt;<span class="ͼu">label</span> <span class="ͼq">for</span><span class="ͼv">=</span><span class="ͼ13">"numberEntry"</span> <span class="ͼq">class</span><span class="ͼv">=</span><span class="ͼ13">"labStyle"</span>&gt;</div><div class="cm-line">                        &lt;<span class="ͼu">svg</span> <span class="ͼq">xmlns</span><span class="ͼv">=</span><span class="ͼ13">"http://www.w3.org/2000/svg"</span> <span class="ͼq">width</span><span class="ͼv">=</span><span class="ͼ13">"1em"</span> <span class="ͼq">height</span><span class="ͼv">=</span><span class="ͼ13">"1em"</span> <span class="ͼq">viewBox</span><span class="ͼv">=</span><span class="ͼ13">"0 0 24 24"</span>&gt;&lt;<span class="ͼu">path</span> <span class="ͼq">fill</span><span class="ͼv">=</span><span class="ͼ13">"black"</span> </div><div class="cm-line">                            <span class="ͼq">d</span><span class="ͼv">=</span><span class="ͼ13">"M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24c1.12.37 2.33.57 3.57.57c.55 0 1 .45 1 1V20c0 .55-.45 1-1 1c-9.39 0-17-7.61-17-17c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1c0 1.25.2 2.45.57 3.57c.11.35.03.74-.25 1.02z"</span>/&gt;</div><div class="cm-line">                        &lt;/<span class="ͼu">svg</span>&gt;</div><div class="cm-line">                    &lt;/<span class="ͼu">label</span>&gt;</div><div class="cm-line">                    &lt;<span class="ͼu">input</span> <span class="ͼq">type</span><span class="ͼv">=</span><span class="ͼ13">"text"</span> <span class="ͼq">name</span><span class="ͼv">=</span><span class="ͼ13">"numberEntry"</span> <span class="ͼq">id</span><span class="ͼv">=</span><span class="ͼ13">"numberEntry"</span> <span class="ͼq">autofocus</span> <span class="ͼq">size</span><span class="ͼv">=</span><span class="ͼ13">"30"</span> <span class="ͼq">maxlength</span><span class="ͼv">=</span><span class="ͼ13">"20"</span>&gt;</div><div class="cm-line">                &lt;/<span class="ͼu">div</span>&gt;</div><div class="cm-line">            &lt;/<span class="ͼu">form</span>&gt;</div><div class="cm-line">        &lt;/<span class="ͼu">section</span>&gt;</div><div class="cm-line"><br></div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms; animation-name: cm-blink;"><div class="cm-cursor cm-cursor-primary" style="left: 327.086px; top: 442.188px; height: 15px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div></details><details class="editor-container" open=""><summary>CSS</summary><div class="editor"><div class="cm-editor ͼ1 ͼ3 ͼ4 ͼo"><div aria-live="polite" style="position: fixed; top: -10000px;"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 481.078px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">99</div><div class="cm-gutterElement" style="height: 18.1953px; margin-top: 4px;">1</div><div class="cm-gutterElement" style="height: 18.1953px;">2</div><div class="cm-gutterElement" style="height: 18.1953px;">3</div><div class="cm-gutterElement" style="height: 18.1953px;">4</div><div class="cm-gutterElement" style="height: 18.1953px;">5</div><div class="cm-gutterElement" style="height: 18.1953px;">6</div><div class="cm-gutterElement" style="height: 18.1953px;">7</div><div class="cm-gutterElement" style="height: 18.1953px;">8</div><div class="cm-gutterElement" style="height: 18.1953px;">9</div><div class="cm-gutterElement" style="height: 18.1953px;">10</div><div class="cm-gutterElement" style="height: 18.1953px;">11</div><div class="cm-gutterElement" style="height: 18.1953px;">12</div><div class="cm-gutterElement" style="height: 18.1953px;">13</div><div class="cm-gutterElement" style="height: 18.1953px;">14</div><div class="cm-gutterElement" style="height: 18.1953px;">15</div><div class="cm-gutterElement" style="height: 18.1953px;">16</div><div class="cm-gutterElement" style="height: 18.1953px;">17</div><div class="cm-gutterElement" style="height: 18.1953px;">18</div><div class="cm-gutterElement" style="height: 18.1953px;">19</div><div class="cm-gutterElement" style="height: 18.1953px;">20</div><div class="cm-gutterElement" style="height: 18.1953px;">21</div><div class="cm-gutterElement" style="height: 18.1953px;">22</div><div class="cm-gutterElement" style="height: 18.1953px;">23</div><div class="cm-gutterElement" style="height: 18.1953px;">24</div><div class="cm-gutterElement" style="height: 18.1953px;">25</div><div class="cm-gutterElement" style="height: 18.1953px;">26</div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" contenteditable="true" class="cm-content cm-lineWrapping" role="textbox" aria-multiline="true" data-language="css" aria-autocomplete="list" style="tab-size: 4;" data-gramm="false" wt-ignore-input="true"><div class="cm-activeLine cm-line">.<span class="ͼu">panneau</span> {</div><div class="cm-line">  <span class="ͼq">font</span>:</div><div class="cm-line">    <span class="ͼu">16</span><span class="ͼp">px</span> <span class="ͼ13">"Open Sans"</span><span class="ͼt">,</span></div><div class="cm-line">    <span class="ͼ12">Helvetica</span><span class="ͼt">,</span></div><div class="cm-line">    <span class="ͼ12">Arial</span><span class="ͼt">,</span></div><div class="cm-line">    <span class="ͼ12">sans-serif</span><span class="ͼt">;</span></div><div class="cm-line">  <span class="ͼq">border</span>: <span class="ͼu">1</span><span class="ͼp">px</span> <span class="ͼ12">solid</span> <span class="ͼs">#22d</span><span class="ͼt">;</span></div><div class="cm-line">  <span class="ͼq">padding</span>: <span class="ͼu">12</span><span class="ͼp">px</span><span class="ͼt">;</span></div><div class="cm-line">  <span class="ͼq">width</span>: <span class="ͼu">500</span><span class="ͼp">px</span><span class="ͼt">;</span></div><div class="cm-line">  <span class="ͼq">text-align</span>: <span class="ͼ12">center</span><span class="ͼt">;</span></div><div class="cm-line">}</div><div class="cm-line"><br></div><div class="cm-line">.<span class="ͼu">bouton</span> {</div><div class="cm-line">  <span class="ͼq">font</span>:</div><div class="cm-line">    <span class="ͼu">22</span><span class="ͼp">px</span> <span class="ͼ13">"Open Sans"</span><span class="ͼt">,</span></div><div class="cm-line">    <span class="ͼ12">Helvetica</span><span class="ͼt">,</span></div><div class="cm-line">    <span class="ͼ12">Arial</span><span class="ͼt">,</span></div><div class="cm-line">    <span class="ͼ12">sans-serif</span><span class="ͼt">;</span></div><div class="cm-line">  <span class="ͼq">padding</span>: <span class="ͼu">5</span><span class="ͼp">px</span> <span class="ͼu">36</span><span class="ͼp">px</span><span class="ͼt">;</span></div><div class="cm-line">}</div><div class="cm-line"><br></div><div class="cm-line"><span class="ͼu">h1</span> {</div><div class="cm-line">  <span class="ͼq">margin-top</span>: <span class="ͼu">0</span><span class="ͼt">;</span></div><div class="cm-line">  <span class="ͼq">font-size</span>: <span class="ͼu">175</span><span class="ͼp">%</span><span class="ͼt">;</span></div><div class="cm-line">}</div><div class="cm-line"><br></div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms;"><div class="cm-cursor cm-cursor-primary" style="left: 29.6562px; top: 5.5px; height: 15px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div></details><details class="editor-container" open=""><summary>JAVASCRIPT</summary><div class="editor"><div class="cm-editor cm-focused ͼ1 ͼ3 ͼ4 ͼo"><div aria-live="polite" style="position: fixed; top: -10000px;"></div><div tabindex="-1" class="cm-scroller"><div class="cm-gutters" aria-hidden="true" style="min-height: 299.125px; position: sticky;"><div class="cm-gutter cm-lineNumbers"><div class="cm-gutterElement" style="height: 0px; visibility: hidden; pointer-events: none;">99</div><div class="cm-gutterElement" style="height: 18.1953px; margin-top: 4px;">1</div><div class="cm-gutterElement" style="height: 18.1953px;">2</div><div class="cm-gutterElement" style="height: 18.1953px;">3</div><div class="cm-gutterElement" style="height: 18.1953px;">4</div><div class="cm-gutterElement" style="height: 18.1953px;">5</div><div class="cm-gutterElement" style="height: 18.1953px;">6</div><div class="cm-gutterElement" style="height: 18.1953px;">7</div><div class="cm-gutterElement" style="height: 18.1953px;">8</div><div class="cm-gutterElement" style="height: 18.1953px;">9</div><div class="cm-gutterElement" style="height: 18.1953px;">10</div><div class="cm-gutterElement" style="height: 18.1953px;">11</div><div class="cm-gutterElement" style="height: 18.1953px;">12</div><div class="cm-gutterElement" style="height: 18.1953px;">13</div><div class="cm-gutterElement" style="height: 18.1953px;">14</div><div class="cm-gutterElement" style="height: 18.1953px;">15</div><div class="cm-gutterElement" style="height: 18.1953px;">16</div></div></div><div spellcheck="false" autocorrect="off" autocapitalize="off" translate="no" contenteditable="true" class="cm-content cm-lineWrapping" role="textbox" aria-multiline="true" data-language="javascript" aria-autocomplete="list" style="tab-size: 4;" data-gramm="false" wt-ignore-input="true"><div class="cm-line"><span class="ͼq">document</span><span class="ͼv">.</span><span class="ͼq">getElementById</span>(<span class="ͼ13">"newContactLink"</span>)<span class="ͼv">.</span><span class="ͼq">addEventListener</span>(</div><div class="cm-line">  <span class="ͼ13">"click"</span><span class="ͼt">,</span></div><div class="cm-line">  <span class="ͼp">function</span> () {</div><div class="cm-line">    <span class="ͼq">document</span><span class="ͼv">.</span><span class="ͼq">getElementById</span>(<span class="ͼ13">"listContact"</span>)<span class="ͼv">.</span><span class="ͼq">hidden</span> <span class="ͼv">=</span> <span class="ͼ12">true</span><span class="ͼt">;</span></div><div class="cm-line">    <span class="ͼq">document</span><span class="ͼv">.</span><span class="ͼq">getElementById</span>(<span class="ͼ13">"addNewContact"</span>)<span class="ͼv">.</span><span class="ͼq">hidden</span> <span class="ͼv">=</span> <span class="ͼ12">false</span><span class="ͼt">;</span></div><div class="cm-line">  }<span class="ͼt">,</span></div><div class="cm-line">  <span class="ͼ12">false</span><span class="ͼt">,</span></div><div class="cm-line">)<span class="ͼt">;</span></div><div class="cm-line"><span class="ͼq">document</span><span class="ͼv">.</span><span class="ͼq">getElementById</span>(<span class="ͼ13">"return"</span>)<span class="ͼv">.</span><span class="ͼq">addEventListener</span>(</div><div class="cm-activeLine cm-line">  <span class="ͼ13">"click"</span><span class="ͼt">,</span></div><div class="cm-line">  <span class="ͼp">function</span> () {</div><div class="cm-line">    <span class="ͼq">document</span><span class="ͼv">.</span><span class="ͼq">getElementById</span>(<span class="ͼ13">"addNewContact"</span>)<span class="ͼv">.</span><span class="ͼq">hidden</span> <span class="ͼv">=</span> <span class="ͼ12">true</span><span class="ͼt">;</span></div><div class="cm-line">    <span class="ͼq">document</span><span class="ͼv">.</span><span class="ͼq">getElementById</span>(<span class="ͼ13">"listContact"</span>)<span class="ͼv">.</span><span class="ͼq">hidden</span> <span class="ͼv">=</span> <span class="ͼ12">false</span><span class="ͼt">;</span></div><div class="cm-line">  }<span class="ͼt">,</span></div><div class="cm-line">  <span class="ͼ12">false</span><span class="ͼt">,</span></div><div class="cm-line">)<span class="ͼt">;</span></div></div><div class="cm-layer cm-layer-above cm-cursorLayer" aria-hidden="true" style="z-index: 150; animation-duration: 1200ms; animation-name: cm-blink2;"><div class="cm-cursor cm-cursor-primary" style="left: 107.93px; top: 169.258px; height: 15px;"></div></div><div class="cm-layer cm-selectionLayer" aria-hidden="true" style="z-index: -2;"></div></div></div></div></details></section><section class="preview"><iframe title="runner" src="./Playground _ MDN_files/runner.html" sandbox="allow-scripts allow-same-origin allow-forms"></iframe><div id="play-console"><span>Console</span><ul></ul></div><section class="place side"></section></section></main></div><footer id="nav-footer" class="page-footer"><div class="page-footer-grid"><div class="page-footer-logo-col"><a href="https://developer.mozilla.org/" class="mdn-footer-logo" aria-label="MDN homepage"><svg width="48" height="17" viewBox="0 0 48 17" fill="none" xmlns="http://www.w3.org/2000/svg"><title id="mdn-footer-logo-svg">MDN logo</title><path d="M20.04 16.512H15.504V10.416C15.504 9.488 15.344 8.824 15.024 8.424C14.72 8.024 14.264 7.824 13.656 7.824C12.92 7.824 12.384 8.064 12.048 8.544C11.728 9.024 11.568 9.64 11.568 10.392V14.184H13.008V16.512H8.472V10.416C8.472 9.488 8.312 8.824 7.992 8.424C7.688 8.024 7.232 7.824 6.624 7.824C5.872 7.824 5.336 8.064 5.016 8.544C4.696 9.024 4.536 9.64 4.536 10.392V14.184H6.6V16.512H0V14.184H1.44V8.04H0.024V5.688H4.536V7.32C5.224 6.088 6.32 5.472 7.824 5.472C8.608 5.472 9.328 5.664 9.984 6.048C10.64 6.432 11.096 7.016 11.352 7.8C11.992 6.248 13.168 5.472 14.88 5.472C15.856 5.472 16.72 5.776 17.472 6.384C18.224 6.992 18.6 7.936 18.6 9.216V14.184H20.04V16.512Z" fill="currentColor"></path><path d="M33.6714 16.512H29.1354V14.496C28.8314 15.12 28.3834 15.656 27.7914 16.104C27.1994 16.536 26.4154 16.752 25.4394 16.752C24.0154 16.752 22.8954 16.264 22.0794 15.288C21.2634 14.312 20.8554 12.984 20.8554 11.304C20.8554 9.688 21.2554 8.312 22.0554 7.176C22.8554 6.04 24.0634 5.472 25.6794 5.472C26.5594 5.472 27.2794 5.648 27.8394 6C28.3994 6.352 28.8314 6.8 29.1354 7.344V2.352H26.9754V0H32.2314V14.184H33.6714V16.512ZM29.1354 11.04V10.776C29.1354 9.88 28.8954 9.184 28.4154 8.688C27.9514 8.176 27.3674 7.92 26.6634 7.92C25.9754 7.92 25.3674 8.176 24.8394 8.688C24.3274 9.2 24.0714 10.008 24.0714 11.112C24.0714 12.152 24.3114 12.944 24.7914 13.488C25.2714 14.032 25.8394 14.304 26.4954 14.304C27.3114 14.304 27.9514 13.96 28.4154 13.272C28.8954 12.584 29.1354 11.84 29.1354 11.04Z" fill="currentColor"></path><path d="M47.9589 16.512H41.9829V14.184H43.4229V10.416C43.4229 9.488 43.2629 8.824 42.9429 8.424C42.6389 8.024 42.1829 7.824 41.5749 7.824C40.8389 7.824 40.2709 8.056 39.8709 8.52C39.4709 8.968 39.2629 9.56 39.2469 10.296V14.184H40.6869V16.512H34.7109V14.184H36.1509V8.04H34.5909V5.688H39.2469V7.344C39.9669 6.096 41.1269 5.472 42.7269 5.472C43.7509 5.472 44.6389 5.776 45.3909 6.384C46.1429 6.992 46.5189 7.936 46.5189 9.216V14.184H47.9589V16.512Z" fill="currentColor"></path></svg></a><p>Your blueprint for a better internet.</p><ul class="social-icons"><li><a class="icon icon-mastodon" href="https://mozilla.social/@mdn" target="_blank" rel="me noopener noreferrer"><span class="visually-hidden">MDN on Mastodon</span></a></li><li><a class="icon icon-twitter-x" href="https://twitter.com/mozdevnet" target="_blank" rel="noopener noreferrer"><span class="visually-hidden">MDN on X (formerly Twitter)</span></a></li><li><a class="icon icon-github-mark-small" href="https://github.com/mdn/" target="_blank" rel="noopener noreferrer"><span class="visually-hidden">MDN on GitHub</span></a></li><li><a class="icon icon-feed" href="https://developer.mozilla.org/en-US/blog/rss.xml" target="_blank"><span class="visually-hidden">MDN Blog RSS Feed</span></a></li></ul></div><div class="page-footer-nav-col-1"><h2 class="footer-nav-heading">MDN</h2><ul class="footer-nav-list"><li class="footer-nav-item"><a href="https://developer.mozilla.org/en-US/about">About</a></li><li class="footer-nav-item"><a href="https://developer.mozilla.org/en-US/blog/">Blog</a></li><li class="footer-nav-item"><a href="https://www.mozilla.org/en-US/careers/listings/?team=ProdOps" target="_blank" rel="noopener noreferrer">Careers</a></li><li class="footer-nav-item"><a href="https://developer.mozilla.org/en-US/advertising">Advertise with us</a></li></ul></div><div class="page-footer-nav-col-2"><h2 class="footer-nav-heading">Support</h2><ul class="footer-nav-list"><li class="footer-nav-item"><a class="footer-nav-link" href="https://support.mozilla.org/products/mdn-plus">Product help</a></li><li class="footer-nav-item"><a class="footer-nav-link" href="https://developer.mozilla.org/fr/docs/MDN/Community/Issues">Report an issue</a></li></ul></div><div class="page-footer-nav-col-3"><h2 class="footer-nav-heading">Our communities</h2><ul class="footer-nav-list"><li class="footer-nav-item"><a class="footer-nav-link" href="https://developer.mozilla.org/en-US/community">MDN Community</a></li><li class="footer-nav-item"><a class="footer-nav-link" href="https://discourse.mozilla.org/c/mdn/236" target="_blank" rel="noopener noreferrer">MDN Forum</a></li><li class="footer-nav-item"><a class="footer-nav-link" href="https://developer.mozilla.org/discord" target="_blank" rel="noopener noreferrer">MDN Chat</a></li></ul></div><div class="page-footer-nav-col-4"><h2 class="footer-nav-heading">Developers</h2><ul class="footer-nav-list"><li class="footer-nav-item"><a class="footer-nav-link" href="https://developer.mozilla.org/fr/docs/Web">Web Technologies</a></li><li class="footer-nav-item"><a class="footer-nav-link" href="https://developer.mozilla.org/fr/docs/Learn">Learn Web Development</a></li><li class="footer-nav-item"><a class="footer-nav-link" href="https://developer.mozilla.org/fr/plus">MDN Plus</a></li><li class="footer-nav-item"><a href="https://hacks.mozilla.org/" target="_blank" rel="noopener noreferrer">Hacks Blog</a></li></ul></div><div class="page-footer-moz"><a href="https://www.mozilla.org/" class="footer-moz-logo-link" target="_blank" rel="noopener noreferrer"><svg width="112" height="32" fill="none" xmlns="http://www.w3.org/2000/svg"><title id="mozilla-footer-logo-svg">Mozilla logo</title><path d="M41.753 14.218c-2.048 0-3.324 1.522-3.324 4.157 0 2.423 1.119 4.286 3.29 4.286 2.082 0 3.447-1.678 3.447-4.347 0-2.826-1.522-4.096-3.413-4.096Zm54.89 7.044c0 .901.437 1.618 1.645 1.618 1.427 0 2.949-1.024 3.044-3.352-.649-.095-1.365-.185-2.02-.185-1.426-.005-2.668.397-2.668 1.92Z" fill="currentColor"></path><path d="M0 0v32h111.908V0H0Zm32.56 25.426h-5.87v-7.884c0-2.423-.806-3.352-2.39-3.352-1.924 0-2.702 1.365-2.702 3.324v4.868h1.864v3.044h-5.864v-7.884c0-2.423-.806-3.352-2.39-3.352-1.924 0-2.702 1.365-2.702 3.324v4.868h2.669v3.044H6.642v-3.044h1.863v-7.918H6.642V11.42h5.864v2.11c.839-1.489 2.3-2.39 4.252-2.39 2.02 0 3.878.963 4.566 3.01.778-1.862 2.361-3.01 4.566-3.01 2.512 0 4.812 1.522 4.812 4.84v6.402h1.863v3.044h-.005Zm9.036.307c-4.314 0-7.296-2.635-7.296-7.106 0-4.096 2.484-7.481 7.514-7.481s7.481 3.38 7.481 7.29c0 4.472-3.228 7.297-7.699 7.297Zm22.578-.307H51.942l-.403-2.11 7.7-8.846h-4.376l-.621 2.17-2.888-.313.498-4.907h12.294l.313 2.11-7.767 8.852h4.533l.654-2.172 3.167.308-.872 4.908Zm7.99 0h-4.191v-5.03h4.19v5.03Zm0-8.976h-4.191v-5.03h4.19v5.03Zm2.618 8.976 6.054-21.358h3.945l-6.054 21.358h-3.945Zm8.136 0 6.048-21.358h3.945l-6.054 21.358h-3.939Zm21.486.307c-1.863 0-2.887-1.085-3.072-2.792-.805 1.427-2.232 2.792-4.498 2.792-2.02 0-4.314-1.085-4.314-4.006 0-3.447 3.323-4.253 6.518-4.253.778 0 1.584.034 2.3.124v-.465c0-1.427-.034-3.133-2.3-3.133-.84 0-1.488.061-2.143.402l-.453 1.578-3.195-.34.549-3.224c2.45-.996 3.692-1.27 5.992-1.27 3.01 0 5.556 1.55 5.556 4.75v6.083c0 .805.314 1.085.963 1.085.184 0 .375-.034.587-.095l.034 2.11a5.432 5.432 0 0 1-2.524.654Z" fill="currentColor"></path></svg></a><ul class="footer-moz-list"><li class="footer-moz-item"><a href="https://www.mozilla.org/privacy/websites/" class="footer-moz-link" target="_blank" rel="noopener noreferrer">Website Privacy Notice</a></li><li class="footer-moz-item"><a href="https://www.mozilla.org/privacy/websites/#cookies" class="footer-moz-link" target="_blank" rel="noopener noreferrer">Cookies</a></li><li class="footer-moz-item"><a href="https://www.mozilla.org/about/legal/terms/mozilla" class="footer-moz-link" target="_blank" rel="noopener noreferrer">Legal</a></li><li class="footer-moz-item"><a href="https://www.mozilla.org/about/governance/policies/participation/" class="footer-moz-link" target="_blank" rel="noopener noreferrer">Community Participation Guidelines</a></li></ul></div><div class="page-footer-legal"><p id="license" class="page-footer-legal-text">Visit <a href="https://www.mozilla.org/" target="_blank" rel="noopener noreferrer">Mozilla Corporation’s</a> not-for-profit parent, the <a target="_blank" rel="noopener noreferrer" href="https://foundation.mozilla.org/">Mozilla Foundation</a>.<br>Portions of this content are ©1998–2024 by individual mozilla.org contributors. Content available under <a href="https://developer.mozilla.org/fr/docs/MDN/Writing_guidelines/Attrib_copyright_license">a Creative Commons license</a>.</p></div></div></footer></div><script type="application/json" id="hydration">{}</script><div id="a11y-status-message" role="status" aria-live="polite" aria-relevant="additions text" style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px;"></div></body><quillbot-extension-portal style="display: initial; visibility: initial; opacity: initial; clip-path: initial;"><template shadowrootmode="open"><div></div></template></quillbot-extension-portal><quillbot-extension-root style="display: initial; visibility: initial; opacity: initial; clip-path: initial;"><template shadowrootmode="open" shadowrootdelegatesfocus><div id="qb-ext-sr"><div style="display: none;"><button class="MuiButton-root MuiButton-primary MuiButton-primaryPrimary MuiButton-sizeSmall MuiButton-primarySizeSmall MuiButtonBase-root extn-css-1mbubfb" tabindex="0" type="button" appearance="brand"><span class="MuiTouchRipple-root extn-css-w0pj6f"></span></button></div><style data-styled="active" data-styled-version="5.3.5">*,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;--tw-border-opacity:1;border-color:rgba(229,231,235,var(--tw-border-opacity));--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-transform:translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgba(59,130,246,0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-blur:var(--tw-empty,/*!*/ /*!*/);--tw-brightness:var(--tw-empty,/*!*/ /*!*/);--tw-contrast:var(--tw-empty,/*!*/ /*!*/);--tw-grayscale:var(--tw-empty,/*!*/ /*!*/);--tw-hue-rotate:var(--tw-empty,/*!*/ /*!*/);--tw-invert:var(--tw-empty,/*!*/ /*!*/);--tw-saturate:var(--tw-empty,/*!*/ /*!*/);--tw-sepia:var(--tw-empty,/*!*/ /*!*/);--tw-drop-shadow:var(--tw-empty,/*!*/ /*!*/);--tw-filter:var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);--tw-backdrop-blur:var(--tw-empty,/*!*/ /*!*/);--tw-backdrop-brightness:var(--tw-empty,/*!*/ /*!*/);--tw-backdrop-contrast:var(--tw-empty,/*!*/ /*!*/);--tw-backdrop-grayscale:var(--tw-empty,/*!*/ /*!*/);--tw-backdrop-hue-rotate:var(--tw-empty,/*!*/ /*!*/);--tw-backdrop-invert:var(--tw-empty,/*!*/ /*!*/);--tw-backdrop-opacity:var(--tw-empty,/*!*/ /*!*/);--tw-backdrop-saturate:var(--tw-empty,/*!*/ /*!*/);--tw-backdrop-sepia:var(--tw-empty,/*!*/ /*!*/);--tw-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);}html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";}body{margin:0;font-family:inherit;line-height:inherit;}hr{height:0;color:inherit;border-top-width:1px;}abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted;}b,strong{font-weight:bolder;}code,kbd,samp,pre{font-family:ui-monospace,SFMono-Regular,Consolas,'Liberation Mono',Menlo,monospace;font-size:1em;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sub{bottom:-0.25em;}sup{top:-0.5em;}table{text-indent:0;border-color:inherit;border-collapse:collapse;}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:inherit;margin:0;padding:0;color:inherit;}button,select{text-transform:none;}button,[type='button'],[type='reset'],[type='submit']{-webkit-appearance:button;}::-moz-focus-inner{border-style:none;padding:0;}:-moz-focusring{outline:1px dotted ButtonText;}:-moz-ui-invalid{box-shadow:none;}legend{padding:0;}progress{vertical-align:baseline;}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto;}[type='search']{-webkit-appearance:textfield;outline-offset:-2px;}::-webkit-search-decoration{-webkit-appearance:none;}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit;}summary{display:list-item;}blockquote,dl,dd,h1,h2,h3,h4,h5,h6,hr,figure,p,pre{margin:0;}button{background-color:transparent;background-image:none;}fieldset{margin:0;padding:0;}ol,ul{list-style:none;margin:0;padding:0;}img{border-style:solid;}textarea{resize:vertical;}input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#9ca3af;}input::-moz-placeholder,textarea::-moz-placeholder{color:#9ca3af;}input:-ms-input-placeholder,textarea:-ms-input-placeholder{color:#9ca3af;}input::placeholder,textarea::placeholder{color:#9ca3af;}button,[role="button"]{cursor:pointer;}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit;}a{color:inherit;-webkit-text-decoration:inherit;text-decoration:inherit;}pre,code,kbd,samp{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;}img,svg,video,canvas,audio,iframe,embed,object{display:block;vertical-align:middle;}img,video{max-width:100%;height:auto;}[hidden]{display:none;}@-webkit-keyframes spin{to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}@keyframes spin{to{-webkit-transform:rotate(360deg);-ms-transform:rotate(360deg);transform:rotate(360deg);}}@-webkit-keyframes ping{75%,100%{-webkit-transform:scale(2);-ms-transform:scale(2);transform:scale(2);opacity:0;}}@keyframes ping{75%,100%{-webkit-transform:scale(2);-ms-transform:scale(2);transform:scale(2);opacity:0;}}@-webkit-keyframes pulse{50%{opacity:.5;}}@keyframes pulse{50%{opacity:.5;}}@-webkit-keyframes bounce{0%,100%{-webkit-transform:translateY(-25%);-ms-transform:translateY(-25%);transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(0.8,0,1,1);animation-timing-function:cubic-bezier(0.8,0,1,1);}50%{-webkit-transform:none;-ms-transform:none;transform:none;-webkit-animation-timing-function:cubic-bezier(0,0,0.2,1);animation-timing-function:cubic-bezier(0,0,0.2,1);}}@keyframes bounce{0%,100%{-webkit-transform:translateY(-25%);-ms-transform:translateY(-25%);transform:translateY(-25%);-webkit-animation-timing-function:cubic-bezier(0.8,0,1,1);animation-timing-function:cubic-bezier(0.8,0,1,1);}50%{-webkit-transform:none;-ms-transform:none;transform:none;-webkit-animation-timing-function:cubic-bezier(0,0,0.2,1);animation-timing-function:cubic-bezier(0,0,0.2,1);}}</style></div><style id="common-css">[contenteditable]:focus {
+  outline: 0px solid transparent;
+}
+
+:root {
+  --new: #499557;
+  --new-hover: #41894e;
+  --new-secondary: #71b657;
+  --new-filter: saturate(150%) hue-rotate(25deg) brightness(92%);
+  --new-filter-hover: brightness(90%);
+  --new-banner: #6aab76;
+  --new-banner-hover: #65986f;
+
+  --traditional-filter: none;
+  --traditional-filter-hover: none;
+  --traditional-secondary: #8aad67;
+  --traditional: #849e63;
+  --traditional-hover: #687b50;
+  --traditional-banner: #99b576;
+  --traditional-banner-hover: #799655;
+
+  --primary: var(--new);
+  --secondary: var(--new-secondary);
+  --primary-hover: var(--new-hover);
+  --image-filter: var(--new-filter);
+  --image-filter-hover: var(--new-filter-hover);
+  --banner: var(--new-banner);
+  --banner-hover: var(--new-banner-hover);
+
+  --default-font: Lato, sans-serif;
+}
+
+body {
+  background: #fff;
+  justify-content: center;
+  text-rendering: optimizelegibility;
+  margin: 0 !important;
+}
+
+.mobile-quill-bottom-controls > div {
+  min-width: 48px;
+}
+
+textarea {
+  resize: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* .title {
+  width: 500px;
+  font-size: 1.5rem;
+  display: inline-block;
+} */
+
+.btn {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  transition: all 0.3s;
+}
+
+/* hide google re-captcha */
+
+.go-premium-btn {
+  width: 150px;
+  text-align: center;
+  padding: 4px 20px !important;
+  margin: auto;
+  font-weight: bold !important;
+  color: #fff;
+  cursor: pointer;
+}
+
+.no-box-shadow {
+  box-shadow: none !important;
+}
+
+.login-offer-text {
+  margin: -2px 2px;
+}
+
+.green-text {
+  transition: all 0.15s;
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.green-text:hover {
+  color: var(--primary-hover);
+}
+
+.word-prompt-items {
+  display: flex;
+}
+
+.article-sentence {
+  display: inline;
+  -webkit-transition: all 0.15s;
+  -moz-transition: all 0.15s;
+  -o-transition: all 0.15s;
+  -ms-transition: all 0.15s;
+  transition: all 0.15s;
+  /* padding: 4.5px 0px; */
+}
+
+.similarity-score {
+  color: black;
+  font-size: 0.65em;
+  margin-left: 5px;
+}
+
+.error-message {
+  color: #ee1212;
+  font-family: Lato, serif;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 18px;
+  width: 100%;
+  display: block;
+}
+
+.success-message {
+  color: #00ff00;
+  font-family: Lato, serif;
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 18px;
+}
+
+.color-scale {
+  width: 100%;
+  height: 12px;
+  display: flex;
+  justify-content: space-around;
+  padding: 2px;
+  margin-top: 6px;
+  margin-left: -1px;
+}
+
+.color-button {
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid #737373;
+  margin-top: -2px;
+  margin: 8px 8px;
+  transition: all 0.1s;
+}
+
+.color-button-inside {
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.1s;
+  margin-top: -2px;
+  margin: 2px 2px;
+}
+
+.article-color-button {
+  background-color: #f8f8f8;
+  width: 10px;
+  height: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+  border: 2px solid #737373;
+  margin-top: -2px;
+  margin: 3px 4px;
+  transition: all 0.1s;
+}
+
+.article-color-button-inside {
+  background-color: #f8f8f8;
+  width: 8px;
+  height: 8px;
+  cursor: pointer;
+  border-radius: 8px;
+  margin-top: -2px;
+  margin: 1px 1px;
+  transition: all 0.1s;
+}
+
+.recaptcha-container {
+  position: absolute;
+}
+
+#example1 {
+  transition: all 0.1s;
+}
+
+.processing-payment {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-top: 0;
+  margin-left: 0;
+  text-align: center;
+  left: 0px;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.my-tooltip {
+  line-height: 20px;
+  font-size: 0.9em;
+  width: 210px;
+  text-align: center;
+  transition: all 0s;
+  z-index: 9000000;
+}
+
+.my-tooltip > h6 {
+  line-height: 0px;
+  margin-top: 18px;
+  font-size: 0.9em;
+  margin-bottom: 18px;
+  filter: brightness(100);
+  text-align: center;
+  transition: all 0s;
+}
+
+.p-lock {
+  margin-left: 1px;
+  width: 14px;
+  height: 14px;
+  opacity: 0.69;
+}
+
+.ap-lock {
+  width: 12px;
+  height: 12px;
+  opacity: 0.69;
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.strength-list {
+  display: flex;
+  margin-top: 6px;
+  flex-direction: column;
+  margin-left: 4px;
+}
+
+.strength-list-row {
+  display: flex;
+  cursor: pointer;
+}
+
+.strength-tag {
+  color: rgb(86, 86, 86);
+  font-size: 0.8em;
+  line-height: 33px;
+  font-weight: bold;
+}
+
+.priority-divider {
+  border-top: 1px solid rgb(153, 153, 153);
+  width: 70%;
+  margin-left: 5%;
+  margin-top: 7px;
+  margin-bottom: 3px;
+  margin-left: 12%;
+  margin-right: auto;
+}
+
+.credit-cards {
+  margin-right: 0px;
+  cursor: pointer;
+}
+
+.credit-cards img {
+  padding-right: 5px;
+}
+
+.paypal-logo-click {
+  cursor: pointer;
+}
+
+.article-copy-textarea {
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  font-family: Lato, sans-serif;
+  font-size: 1em;
+}
+
+/* ::-webkit-scrollbar {
+  width: 5px;
+  cursor: default;
+}
+*/
+/* Track */
+/* ::-webkit-scrollbar-track {
+  border-radius: 10px;
+} */
+
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+  background: gray;
+} */
+
+/* Loader css */
+#overlay {
+  background: #000000;
+  /* color: #666666; */
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 5000;
+  top: 0;
+  left: 0;
+  float: left;
+  text-align: center;
+  padding-top: 25%;
+  opacity: 0.4;
+}
+
+.spinner {
+  margin: 0 auto;
+  height: 64px;
+  width: 64px;
+  animation: rotate 0.8s infinite linear;
+  border: 5px solid;
+  border-right-color: transparent;
+  border-radius: 50%;
+}
+
+.hotkey-command {
+  /* color: #8f8f8f !important; */
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/*================ new css code for new project ====================== */
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0px 12px;
+  width: 100%;
+}
+
+.extHeader {
+  /* background: #f1f7f3; */
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.maximizeouticon {
+  width: 35px;
+  background: #828282;
+  height: 3px;
+  margin: auto;
+  border-radius: 5px;
+  margin-bottom: 11px;
+  display: block;
+}
+
+.kebabBtn {
+  padding: 6px 0px;
+  text-align: right;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  :root {
+    --new: #499557;
+    --new-hover: #41894e;
+    --new-secondary: #71b657;
+    --new-filter: saturate(150%) hue-rotate(25deg) brightness(92%);
+    --new-filter-hover: brightness(90%);
+    --new-banner: #6aab76;
+    --new-banner-hover: #65986f;
+
+    --traditional-filter: none;
+    --traditional-filter-hover: none;
+    --traditional-secondary: #8aad67;
+    --traditional: #849e63;
+    --traditional-hover: #687b50;
+    --traditional-banner: #99b576;
+    --traditional-banner-hover: #799655;
+
+    --primary: var(--new);
+    --secondary: #71b657;
+    --primary-hover: #41894e;
+    --image-filter: var(--new-filter);
+    --image-filter-hover: var(--new-filter-hover);
+    --banner: var(--new-banner);
+    --banner-hover: var(--new-banner-hover);
+
+    --default-font: Lato, sans-serif;
+  }
+
+  body {
+    text-rendering: optimizelegibility;
+    margin: 0 !important;
+  }
+
+  .manual-payment-container {
+    margin: auto;
+    margin-top: auto;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: 0px solid #499557;
+    border-radius: 6px;
+    margin-top: 20px;
+    min-height: 162px;
+  }
+
+  .processing-payment {
+    position: absolute;
+    background-color: #ccc;
+    opacity: 0.4;
+    height: 100%;
+    margin: auto;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .__react_component_tooltip.show {
+    opacity: 1;
+    transition: all 0s;
+  }
+
+  .green-text {
+    transition: all 0.15s;
+    color: #499557;
+    cursor: pointer;
+  }
+
+  .green-text:hover {
+    color: #41894e;
+  }
+}
+
+/* Forcing font everywhere to be open sans. This not working*/
+body {
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 14px;
+  overscroll-behavior-y: contain;
+  background: #fff;
+}
+
+/*
+using in commented code
+.nd-input-toast-container {
+  bottom: 25px;
+  width: calc(100% - 20px);
+  background: #2c2d33;
+  text-align: center;
+  font-family: monospace;
+  padding: 5px;
+  border-radius: 0px 0px 5px 5px;
+  margin: 2px 5px 5px 5px;
+  color: white;
+}*/
+
+.nd-word {
+  transition: all 0.05s;
+  position: relative;
+}
+
+/* #inputText[placeholder]:empty::before { // check
+  content: attr(placeholder);
+  color: #8497aa;
+} */
+
+#inputText[placeholder]:empty:focus::before {
+  content: '';
+}
+
+/* #inputBoxSummarizer[placeholder]:empty::before {
+  content: attr(placeholder);
+  color: #dcdcdc;
+} */
+
+#inputBoxSummarizer[placeholder]:empty:focus::before {
+  content: '';
+}
+
+/* ============= new design 2 css ================= */
+
+/* start of CSS for splitter */
+.Resizer {
+  background: #000;
+  opacity: 0.2;
+  z-index: 1;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box;
+}
+
+.Pane {
+  display: flex;
+}
+
+/* .Resizer:hover {
+  -webkit-transition: all 2s ease;
+  transition: all 2s ease;
+} */
+
+.extensionMidContainerWithScroll .Pane2 {
+  height: 40%;
+}
+
+.Resizer.horizontal {
+  height: 3px;
+  margin: -2.5px 0 -3.5px 0;
+  cursor: row-resize;
+  width: 100%;
+  background-color: #000;
+  opacity: 0.2;
+  min-height: 3px;
+}
+
+.Resizer.horizontal:hover {
+  background-color: #5f6368;
+}
+
+.Resizer.vertical {
+  width: 7px;
+  margin-right: -4px;
+  border-right: 4px solid rgba(255, 255, 255, 0);
+  cursor: col-resize;
+  border-bottom: 0px;
+}
+
+.Resizer.vertical:hover {
+  border-right: 4px solid rgba(0, 0, 0, 1);
+  width: 7px;
+}
+.Resizer.disabled {
+  cursor: not-allowed;
+}
+.Resizer.disabled:hover {
+  border-color: transparent;
+}
+
+/* =========== new design 3 =============== */
+
+.root-container {
+  flex-direction: column;
+  flex-wrap: unset !important;
+  display: flex;
+  min-height: calc(100vh - 280px);
+  /* background-color: #fff; */
+  padding-top: 25px !important;
+  padding-bottom: 30px !important;
+}
+
+.auth-root {
+  /* background-color: rgba(249, 250, 255); */
+  min-height: calc(100vh - 280px);
+}
+
+.mid-container {
+  max-width: 1300px !important;
+  width: 100%;
+}
+
+.page-header {
+  /* color: #4f4f4f; */
+  text-align: center;
+}
+
+.page-header:first-child,
+.page-header > p:first-child {
+  font-size: 28px !important;
+  text-align: center;
+}
+
+.home-container-gray {
+  /* background-color: #f1f1f1; */
+  min-height: unset;
+  padding-bottom: 40px !important;
+}
+
+.nd-mobile-container {
+  padding: 0px !important;
+  padding-top: 0px !important;
+  /* background: #fff; */
+}
+
+.nd-mobile-container-focused-content {
+  padding-top: 0px !important;
+}
+
+.home-container-premium {
+  min-height: calc(100vh - 60px);
+}
+
+.qbp-d-flex {
+  display: flex !important;
+}
+
+.qbp-pb50 {
+  padding-bottom: 50px !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.px-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.b-shadow {
+  box-shadow: none !important;
+}
+
+.w-100 {
+  width: 100% !important;
+}
+/* == start from here === */
+.qbp-pb10 {
+  padding-bottom: 10px !important;
+}
+
+.qbp-pt20 {
+  padding-top: 20px !important;
+}
+
+.qbp-pb20 {
+  padding-bottom: 20px !important;
+}
+
+.qbp-textCenter {
+  text-align: center !important;
+}
+
+.qbp-mx16 {
+  margin: 0 16px !important;
+}
+
+.qbp-pb20 {
+  padding-bottom: 20px !important;
+}
+
+.qbp-py20 {
+  padding: 20px 0 !important;
+}
+
+.qbp-textYellow {
+  color: #ffb800;
+}
+
+.qbp-semibold {
+  font-weight: 600 !important;
+}
+
+.qbp-settings-item {
+  display: flex;
+  padding: 25px 0 15px !important;
+  justify-content: space-between;
+  border-bottom: 1px solid #8f8f8f;
+  color: #000;
+  align-items: center;
+}
+
+.card-pad {
+  padding: 10px 0 1px 0 !important;
+}
+
+.qbp-settings-item:last-child {
+  border-bottom: 0;
+}
+
+.details-subtitle {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.6);
+  font-weight: normal;
+  font-size: 14px !important;
+}
+
+.settting-span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.details-subtitle-highlight {
+  display: inline-block;
+  color: rgba(0, 0, 0, 0.6);
+  /* font-weight: bold !important; */
+  font-size: 14px !important;
+}
+
+.premium-container {
+  padding-top: 0 !important;
+}
+
+/*************************** Login/Sign up popup css ******************************/
+
+.auth-container {
+  max-width: 480px;
+  width: 100%;
+
+  /* background-color: white; */
+  position: relative;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 480px) {
+  .auth-root {
+    padding: 0px 15px;
+  }
+}
+
+.auth-container-top-border {
+  height: 5px;
+  width: 100%;
+  background: rgb(33, 150, 83);
+  background: linear-gradient(90deg, rgba(33, 150, 83, 1) 11.34%, rgba(41, 113, 254, 1) 100%);
+}
+
+.social-auth-btn {
+  margin: auto !important;
+  position: relative;
+}
+
+.social-auth-btn img {
+  position: absolute;
+  left: 15px;
+  height: 16px;
+}
+
+.auth-btn {
+  line-height: 32px !important;
+  font-weight: 600 !important;
+  font-size: 16px !important;
+  height: 45px;
+}
+
+.qbp-useraccount-text {
+  color: #8a8a8a;
+  padding-bottom: 5px;
+  font-size: 12px;
+}
+
+.qbp-reg-input {
+  border: 1px solid #a6a5a5;
+  color: #5b5b5b;
+  width: 100%;
+  display: block;
+  float: unset;
+  padding: 10px;
+  border-radius: 3px;
+  margin-bottom: 14px;
+  transition: ease all 0.3s;
+  height: 45px;
+}
+
+.qbp-reg-input:focus {
+  box-shadow: 0px 0 16px 0 rgba(0, 0, 0, 0.4);
+  outline: none !important;
+}
+
+.qbp-error-message {
+  font-size: 11px;
+  position: absolute;
+  bottom: 9px;
+  left: 0;
+  color: #ee1212;
+}
+
+.qbp-error-message1 {
+  font-size: 11px;
+  padding-bottom: 10px;
+  color: #ee1212;
+}
+
+.qbp-success-message {
+  color: #27b027;
+  font-size: 13px;
+  line-height: 18px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.qbp-prem-input {
+  font-weight: normal;
+  font-size: 14px;
+  color: #151515 !important;
+  background-color: #fff;
+  width: 100%;
+  font-family: arial;
+  border: 1px solid #c4c4c4;
+  border-radius: 3px;
+  height: 40px;
+  padding: 0px 15px;
+  outline: 0;
+}
+
+.login-drawer {
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.style01 {
+  font-size: 1.5em;
+  font-weight: 600;
+  /* color: #fff; */
+}
+
+.linkstyle01 {
+  color: #fff;
+  padding: 0 5px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.flipperTextContainer {
+  padding: 0px 32px 0px 15px;
+  /* border-left: 1px solid #e0e0e0;*/
+  /* color: rgb(0, 0, 0, 0.75); */
+}
+
+.flipperTextContainer:hover {
+  /* color: black; */
+}
+
+.top-tabs .MuiButtonBase-root {
+  /* display: inline-block !important; */
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.payment-status {
+  font-weight: 600;
+  color: #a1a197;
+}
+
+/**************************Survey popup css stuff **********************/
+.survey-modal {
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  overflow: auto;
+  display: flex;
+  min-width: 100vw;
+  justify-content: center;
+  min-height: 100vh;
+  align-items: center;
+  z-index: 1201;
+}
+
+.survey-container {
+  background-color: white;
+  max-width: 650px;
+  padding: 10px 15px 15px !important;
+  margin: auto !important;
+  position: relative !important;
+}
+
+@media (max-width: 350px) {
+  .survey-container {
+    margin: auto 12 !important;
+  }
+}
+
+@media (max-width: 960px) {
+  .survey-container {
+    max-width: 350px;
+  }
+}
+
+.survey-header {
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  color: #000 !important;
+}
+
+.survey-close-btn {
+  position: absolute !important;
+  top: 0;
+  right: 0;
+}
+
+.survey-question {
+  font-size: 13px !important;
+  padding-bottom: 10px;
+}
+
+.so-checkbox-label {
+  font-size: 12px !important;
+  display: flex;
+  padding-bottom: 8px;
+  color: #5f6368;
+}
+
+.survey-submit-btn {
+  color: #2971fe !important;
+  font-size: 14px !important;
+  float: right;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.unsubscribe-reason {
+  width: 100%;
+}
+
+.steps {
+  font-weight: bold !important;
+}
+
+.feedback-textarea {
+  width: 100%;
+  height: 91px;
+  padding: 5px;
+  font-size: 0.87rem;
+  font-family: 'Open Sans', sans-serif;
+}
+/* .prompt-container {
+  background-color: #fff;
+  position: absolute;
+  top: 23px;
+  z-index: 1150;
+  border: 1px solid #bbb;
+  border-radius: 2px;
+  padding-bottom: 0;
+  transition: all 0.15s;
+
+  box-shadow: 0px 1px 1px #999;
+} */
+
+/* ============= do not remove this css =============*/
+.grecaptcha-badge {
+  visibility: hidden;
+}
+/* =========== do not remove css inside comment area ========== */
+
+/*================== responsive codes ============== */
+
+@media (max-width: 960px) {
+  .terms-main-container ol {
+    margin: 10px 0px;
+    padding-left: 20px;
+    word-break: break-word;
+  }
+
+  .terms-main-container ol li {
+    margin: 10px 0px;
+    padding-left: 20px;
+    word-break: break-word;
+  }
+}
+
+.CardElementHolder {
+  border: 1px #c4c4c4 solid;
+  border-radius: 3px;
+  margin-top: 8px;
+  padding: 11px 15px 10px;
+}
+
+.CardField-child {
+  background: #f00 !important;
+}
+
+/* ======= new global css start ============= */
+p {
+  font-size: 16px;
+}
+a {
+  color: #2971fe;
+}
+
+.btn-link {
+  /* color: #2971fe !important; */
+  cursor: pointer;
+}
+.btn-link:hover {
+  text-decoration: underline;
+}
+
+.pageTitle {
+  font-size: 30px;
+  margin: 30px 15px 15px;
+  line-height: 41px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.terms-main-container ol li::marker {
+  font-size: 16px;
+  font-weight: bold;
+}
+.terms-main-container ol li p b {
+  font-weight: 600;
+}
+
+/* .CbHosted--focus {
+  border: 1px solid #499557 !important;
+} */
+
+.chargebee-overwrites::placeholder {
+  color: #a0a0a0 !important;
+}
+
+.shadow-container {
+  height: 6px;
+  width: 100%;
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+.fix-error {
+  background: rgba(73, 149, 87, 0.2) !important;
+}
+
+#RESEARCH_EDITOR:before {
+  color: #828282;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin: 0 auto;
+}
+
+#RESEARCH_EDITOR * {
+  max-width: 672px;
+  white-space: pre-wrap !important;
+}
+/* .grammarbot-popover-root {
+  pointer-events: none !important;
+} */
+
+.page-wrapper {
+  padding: var(--main-editor__mce-content-body--padding-y) var(--main-editor__mce-content-body--padding-x);
+}
+
+#grammarbot:before {
+  color: #828282;
+  /* margin-left: 137px;
+  margin-right: 138px; */
+}
+
+#wordCounterBot:before {
+  color: #828282;
+}
+
+#grammarbot a {
+  color: inherit; /*To add dark mode compatibility */
+}
+
+.grammarbot-correction-card-ignore-button {
+  padding-top: 13px;
+}
+.grammarbot-status-icons {
+  font-size: 40px !important;
+}
+
+.correction-card-wrapper {
+  margin-top: -10px;
+  padding-top: 8px;
+}
+
+.grammarbot-fix-all {
+  position: absolute !important;
+  top: -48px !important;
+  right: 30% !important;
+  z-index: 1 !important;
+}
+
+.notepadeditor:before {
+  color: #828282;
+  margin-left: 0px;
+}
+
+.notepadeditor {
+  width: 100%;
+  font-size: 13px !important;
+  margin-top: 12px !important;
+}
+
+.notepadeditor > p {
+  margin-block-start: 0em !important;
+  font-size: 13px !important;
+}
+
+#main-editor-parent {
+  /* ! THESE VARIABLES ARE BEING USED IN SCRIPTS */
+  --main-editor__mce-content-body--padding-x: 90px;
+  --main-editor__mce-content-body--padding-y: 90px;
+}
+
+#main-editor > .mce-content-body {
+  /* padding: var(--main-editor__mce-content-body--padding-y, 36px)
+    var(--main-editor__mce-content-body--padding-x, 36px); */
+  min-height: calc(100vh - 190px);
+
+  /* color: #252525; */
+}
+
+#rough-editor {
+  width: 100%;
+  overflow: auto;
+}
+
+#rough-editor > .mce-content-body {
+  height: calc(100vh - 122px);
+  width: 100%;
+  margin: 14px;
+  color: #252525;
+  overflow: auto;
+}
+
+#main-editor > .mce-content-body {
+  word-break: break-word !important;
+  white-space: pre-wrap !important;
+  word-wrap: break-word !important;
+}
+
+#main-editor > .mce-content-body > p,
+#main-editor > .mce-content-body > .page-wrapper > p {
+  font-size: 14px !important;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+}
+
+sup,
+sub {
+  white-space: pre-wrap !important;
+}
+
+.tox-tinymce {
+  border: none !important;
+  position: absolute !important;
+  visibility: visible !important;
+  display: block !important;
+}
+
+#main-editor .tox-editor-header {
+  border: none !important;
+  border-bottom: 1px solid !important;
+}
+
+#toolbar-location .tox-editor-header {
+  border: none !important;
+  top: 20px !important;
+  left: 14px !important;
+}
+
+#toolbar-location .tox-toolbar {
+  background: none !important;
+}
+
+.tox .tox-toolbar-overlord {
+  background: none !important;
+}
+
+.tox-notification {
+  display: none !important;
+}
+
+.tox .tox-tbtn svg {
+  fill: #666666 !important;
+}
+
+.tox .tox-tbtn--disabled svg,
+.tox .tox-tbtn--disabled:hover svg,
+.tox .tox-tbtn:disabled svg,
+.tox .tox-tbtn:disabled:hover svg {
+  fill: rgba(34, 47, 62, 0.5) !important;
+}
+
+.tox .tox-tbtn__select-label {
+  color: #666666 !important;
+}
+
+.tox .tox-autocompleter {
+  max-width: 35em !important;
+}
+
+.tox .tox-autocompleter .tox-menu {
+  max-width: 35em !important;
+}
+
+.tox.tox-tinymce--toolbar-sticky-on .tox-editor-header {
+  box-shadow: none !important;
+}
+
+.tox-editor-header {
+  border-right: none !important;
+}
+
+.tox-toolbar__primary {
+  background: none !important;
+  /* box-shadow: 0px 1px 8px 0px rgba(31, 31, 31, 0.15) !important; */
+  /* border-bottom: 1px solid #ccc !important; */
+  /* border-top: 1px solid #ccc !important; */
+  /* padding-left: 15px !important; */
+  width: 100% !important;
+}
+
+.tox-toolbar__group {
+  border: none !important;
+  /* box-shadow: 2px -1px 3px -2px rgba(31, 31, 31, 0.15) !important; */
+}
+
+.tox-toolbar__group::after {
+  content: url('/images/coWriter/line.svg');
+}
+
+.tox-toolbar__group:last-child:after {
+  content: '';
+}
+
+.tox .tox-menu.tox-collection.tox-collection--list {
+  width: max-content;
+}
+
+.tox-toolbar__primary > .tox-toolbar__group:last-child {
+  box-shadow: none !important;
+}
+
+.quillSettingSpace {
+  -webkit-transition: all 0.1s ease-in-out !important;
+  -moz-transition: all 0.1s ease-in-out !important;
+  -o-transition: all 0.1s ease-in-out !important;
+  transition: all 0.1s ease-in-out !important;
+  margin-top: 26px !important;
+}
+
+.tox-tbtn,
+.tox-tbtn__select-label {
+  cursor: pointer !important;
+}
+
+.tox-tbtn--disabled {
+  cursor: not-allowed !important;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 26px 16px 0px 20px;
+  }
+}
+
+.showFadeEffect {
+  --animation-time: 2s;
+  animation: opacity-fade var(--animation-time) !important;
+}
+
+.dataRefHidden {
+  display: none !important;
+}
+
+.pulseLoader {
+  content: ' ';
+  width: 90px;
+  height: 12px;
+  display: inline-block;
+  background-color: #ccc;
+  animation: new-animation 1s infinite;
+  vertical-align: text-bottom;
+  border-radius: 3px;
+  margin-left: -5px;
+}
+
+@keyframes new-animation {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+@keyframes opacity-fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#doc-title {
+  padding: 46px 0px 13px 137px;
+  width: 70%;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.mce-content-body[data-mce-placeholder]:not(.mce-visualblocks)::before {
+  content: attr(placeholder);
+  pointer-events: none;
+  display: block; /* For Firefox */
+  color: #828282 !important;
+}
+
+[contenteditable='true']:empty:before {
+  content: attr(placeholder);
+  pointer-events: none;
+  display: block; /* For Firefox */
+  color: #828282 !important;
+}
+
+.red-underline {
+  border-bottom: #fb3f4b 2px solid;
+  transition: all 0.3s ease-in-out;
+}
+
+.red-underline:hover {
+  background-color: #fb3f4c14;
+  border-radius: 2px;
+}
+
+.red-underline.error-hovered {
+  background-color: #fb3f4c14;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.blue-underline {
+  border-bottom: #0067c5 2px solid;
+  transition: all 0.3s ease-in-out;
+}
+
+.blue-underline:hover {
+  background-color: #0067c514;
+  border-radius: 2px;
+}
+
+.blue-underline.error-hovered {
+  background-color: #0067c514;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+.magenta-underline {
+  border-bottom: #8051ff 2px solid;
+  transition: all 0.3s ease-in-out;
+}
+
+.magenta-underline:hover {
+  background-color: #8051ff24;
+  border-radius: 2px;
+}
+
+.magenta-underline.error-hovered {
+  background-color: #8051ff24;
+  border-radius: 2px;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+#fixed-toolbar-container .tox-tinymce-inline .tox-editor-header {
+  border: none !important;
+}
+/*
+  Citation Marker style
+*/
+#main-editor .CitationMarkerStyle {
+  padding: 3px;
+}
+
+.CitationMarkerStyle_Burst {
+  background-color: #ffefde !important;
+  color: orange !important;
+}
+
+.reduce-margin-block-end {
+  margin-block-end: -1em !important;
+}
+
+#grammar-checker pre {
+  white-space: pre-wrap;
+}
+
+#word-counter pre {
+  white-space: pre-wrap;
+}
+
+.sound-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sound-wave {
+  width: 400px;
+  height: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sound-wave .audioOnWithSpeech {
+  display: block;
+  width: 5px;
+  margin-right: 1px;
+  height: 90px;
+  background: #499557;
+  animation: sound 0ms -800ms linear infinite alternate;
+  transition: height 0.8s;
+}
+
+.sound-wave .audioOff {
+  display: block;
+  width: 5px;
+  margin-right: 0px;
+  height: 12px;
+  background: #9f9f9f;
+}
+
+.sound-wave .audioOnWithoutSpeech {
+  display: block;
+  width: 5px;
+  margin-right: 0px;
+  height: 12px;
+  background: #499557;
+}
+
+@keyframes sound {
+  0% {
+    opacity: 0.35;
+    height: 6px;
+  }
+  100% {
+    opacity: 1;
+    height: 46px;
+  }
+}
+
+@keyframes sound2 {
+  0% {
+    opacity: 0.35;
+    height: 6px;
+  }
+  100% {
+    opacity: 1;
+    height: 120px;
+  }
+}
+
+.audioOnWithSpeech:nth-child(1) {
+  height: 2px;
+  animation-duration: 274ms;
+}
+
+.audioOnWithSpeech:nth-child(2) {
+  height: 10px;
+  animation-duration: 233ms;
+}
+
+.audioOnWithSpeech:nth-child(3) {
+  height: 18px;
+  animation-duration: 207ms;
+}
+
+.audioOnWithSpeech:nth-child(4) {
+  height: 26px;
+  animation-duration: 258ms;
+}
+
+.audioOnWithSpeech:nth-child(5) {
+  height: 30px;
+  animation-duration: 200ms;
+}
+
+.audioOnWithSpeech:nth-child(6) {
+  height: 32px;
+  animation-duration: 227ms;
+}
+
+.audioOnWithSpeech:nth-child(7) {
+  height: 34px;
+  animation-duration: 241ms;
+}
+
+.audioOnWithSpeech:nth-child(8) {
+  height: 36px;
+  animation-duration: 219ms;
+}
+
+.audioOnWithSpeech:nth-child(9) {
+  height: 40px;
+  animation-duration: 287ms;
+}
+
+.audioOnWithSpeech:nth-child(10) {
+  height: 46px;
+  animation-duration: 242ms;
+}
+
+.audioOnWithSpeech:nth-child(11) {
+  height: 2px;
+  animation-duration: 274ms;
+}
+
+.audioOnWithSpeech:nth-child(12) {
+  height: 10px;
+  animation-duration: 233ms;
+}
+
+.audioOnWithSpeech:nth-child(13) {
+  height: 18px;
+  animation-duration: 207ms;
+}
+
+.audioOnWithSpeech:nth-child(14) {
+  height: 26px;
+  animation-duration: 258ms;
+}
+
+.audioOnWithSpeech:nth-child(15) {
+  height: 30px;
+  animation-duration: 200ms;
+}
+
+.audioOnWithSpeech:nth-child(16) {
+  height: 32px;
+  animation-duration: 227ms;
+}
+
+.audioOnWithSpeech:nth-child(17) {
+  height: 34px;
+  animation-duration: 241ms;
+}
+
+.audioOnWithSpeech:nth-child(18) {
+  height: 36px;
+  animation-duration: 219ms;
+}
+
+.audioOnWithSpeech:nth-child(19) {
+  height: 40px;
+  animation-duration: 287ms;
+}
+
+.audioOnWithSpeech:nth-child(20) {
+  height: 46px;
+  animation-duration: 242ms;
+}
+
+.audioOnWithSpeech:nth-child(21) {
+  height: 2px;
+  animation-duration: 274ms;
+}
+
+.audioOnWithSpeech:nth-child(22) {
+  height: 10px;
+  animation-duration: 233ms;
+}
+
+.audioOnWithSpeech:nth-child(23) {
+  height: 18px;
+  animation-duration: 207ms;
+}
+
+.audioOnWithSpeech:nth-child(24) {
+  height: 26px;
+  animation-duration: 258ms;
+}
+
+.audioOnWithSpeech:nth-child(25) {
+  height: 30px;
+  animation-duration: 200ms;
+}
+
+.audioOnWithSpeech:nth-child(26) {
+  height: 32px;
+  animation-duration: 227ms;
+}
+
+.audioOnWithSpeech:nth-child(27) {
+  height: 34px;
+  animation-duration: 241ms;
+}
+
+.mce-content-body [contentEditable='false'][data-mce-selected] {
+  cursor: not-allowed;
+  outline: 3px solid #f1f1f1 !important;
+}
+
+.display--none {
+  display: none;
+}
+
+/* [title='Font sizes'] {
+  width: 65px !important;
+} */
+
+.wave .dot {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  /* margin-right: 1px; */
+  background: #499557;
+  animation: wave 1s linear infinite;
+}
+.wave .dot:nth-child(1) {
+  animation-delay: -0.9s;
+}
+.wave .dot:nth-child(2) {
+  animation-delay: -0.7s;
+}
+.wave .dot:nth-child(3) {
+  animation-delay: -0.5s;
+}
+
+@keyframes wave {
+  0%,
+  60%,
+  100% {
+    transform: initial;
+  }
+  30% {
+    transform: translateY(-4px);
+  }
+}
+
+    button {
+      font-size: 12px;
+    }
+    p { 
+      color: black; 
+      font-size: 12px; 
+    }
+    input {
+      color: black; 
+      font-size: 12px; 
+      background: white;
+    }
+    textarea {
+      color: black; 
+      font-size: 12px; 
+    }
+    checkbox {
+      background: white;
+    }
+    </style><style><style data-emotion="extn-css" data-s=""></style></style></template></quillbot-extension-root></html>
